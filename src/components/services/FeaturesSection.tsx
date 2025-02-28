@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="overflow-hidden text-black">
+    <section className="m-4 overflow-hidden text-black">
       <div className="p-12 w-full bg-orange-50 rounded-3xl max-md:px-5 max-md:max-w-full">
         <header className="flex flex-wrap gap-10 items-start w-full max-md:max-w-full">
           <h2 className="text-3xl font-extrabold w-[392px]">
