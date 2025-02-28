@@ -40,3 +40,62 @@ body {
 .animate-float-delay-2 {
   animation: float 4s ease-in-out 2s infinite;
 }
+
+/* Unique class names for CameraLoveSection */
+@keyframes cameraLoveFadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cameraLoveFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cameraLovePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cameraLoveFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.camera-love-animate-fade-in-left {
+  animation: cameraLoveFadeInLeft 1s ease-out;
+}
+
+.camera-love-animate-fade-in-right {
+  animation: cameraLoveFadeInRight 1s ease-out;
+}
+
+.camera-love-animate-pop-in {
+  animation: cameraLovePopIn 0.5s ease-out;
+}
+
+.camera-love-animate-fade-in {
+  animation: cameraLoveFadeIn 1s ease-out;
+}

@@ -1,20 +1,20 @@
-
-
 import React from "react";
 
 interface BenefitPointProps {
   icon: string;
   title: string;
   description: string;
+  className?: string; // Add className prop
 }
 
 export const BenefitPoint: React.FC<BenefitPointProps> = ({
   icon,
   title,
   description,
+  className, // Destructure className
 }) => {
   return (
-    <div className="flex flex-wrap gap-4 justify-center items-start w-full max-md:max-w-full">
+    <div className={`flex flex-wrap gap-4 justify-center items-start w-full max-md:max-w-full ${className}`}>
       <img
         loading="lazy"
         src={icon}
