@@ -6,7 +6,7 @@ const SocialLinks = () => {
   // Add scroll event listener to detect when to make the component sticky
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 500) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -21,9 +21,9 @@ const SocialLinks = () => {
     <div
       className={`${
         isSticky
-          ? 'fixed bottom-0 left-0 w-full bg-white shadow-lg z-50 animate-slide-up'
-          : 'relative mt-[46px] max-md:mt-10'
-      } flex flex-col items-center justify-center py-6 transition-all duration-300`}
+          ? 'fixed bottom-0 left-0 w-full bg-white shadow-lg z-50 animate-slide-up items-center'
+          : 'relative mt-[46px] max-md:mt-10 flex-start'
+      } flex flex-col justify-center py-6 transition-all duration-300`}
     >
       {/* Title */}
       <div className="text-black text-lg font-semibold mb-4">Book Your Tickets</div>
