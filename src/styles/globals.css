@@ -209,3 +209,60 @@ body {
 .feature-card-animate {
   animation: fadeInUp 0.8s ease-out;
 }
+
+/* Getting Started Section */
+/* Getting Started Section */
+.getting-started-section {
+  background: #f8f2eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.getting-started-section img {
+  /* opacity: 0.5;  */
+  /* Adjust opacity for better readability */
+}
+
+/* Step Item */
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-number {
+  background: #f8f2eb;
+  color: #2c3e50;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.step-content {
+  color: white;
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+/* Action Button */
+.action-button {
+  background: #B64F1D;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.action-button:hover {
+  background: #B64F1D;
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}

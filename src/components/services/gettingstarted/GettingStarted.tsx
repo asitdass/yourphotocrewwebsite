@@ -1,14 +1,25 @@
 "use client";
 
-import { BorderDecoration } from "./BorderDecoration";
-import { StepItem } from "./StepItem";
 import { ActionButton } from "./ActionButton";
+import { StepItem } from "./StepItem";
 
 const steps = [
-  "Pick the shoot you want: a classic one or a café session",
-  "Fill out our quick booking form [Insert Link to Form]",
-  "Pick a date, a time, and tell us where",
-  "Done! Just show up, relax, and let us work our magic",
+  {
+    number: 1,
+    content: "Pick the shoot you want: a classic one or a café session",
+  },
+  {
+    number: 2,
+    content: "Fill out our quick booking form [Insert Link to Form]",
+  },
+  {
+    number: 3,
+    content: "Pick a date, a time, and tell us where",
+  },
+  {
+    number: 4,
+    content: "Done! Just show up, relax, and let us work our magic",
+  },
 ];
 
 export const GettingStarted = () => {
@@ -18,38 +29,34 @@ export const GettingStarted = () => {
   };
 
   return (
-    <section className="flex overflow-hidden relative flex-col items-start px-16 py-56 rounded-3xl min-h-[579px] max-md:px-5 max-md:py-24">
+    <section className="m-4 getting-started-section relative bg-black/30 py-20 px-10 rounded-3xl overflow-hidden">
+      {/* Background Image */}
       <img
         loading="lazy"
         src="assets/services/gettingstarted/image-7.png"
-        className="object-cover absolute inset-0 size-full"
+        className="absolute inset-0 w-full h-full object-cover"
         alt="Background decoration"
       />
 
-      <BorderDecoration />
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto text-center">
+        {/* Heading */}
+        <h1 className="text-5xl font-bold text-white mb-8">
+          Getting started is as easy as 1, 2, and 3
+        </h1>
 
-      <div className="flex relative flex-col mt-0 max-w-full w-[619px]">
-        <div className="w-full text-black">
-          <h1 className="text-5xl font-bold leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[56px]">
-            Getting started is as easy as 1, 2 and 3
-          </h1>
-
-          <div className="mt-6 w-full max-md:max-w-full">
-            {steps.map((step, index) => (
-              <div key={index} className={index > 0 ? "mt-6" : ""}>
-                <StepItem number={index + 1} content={step} />
-              </div>
-            ))}
-          </div>
+        {/* Steps */}
+        <div className="steps-container flex flex-col gap-6 mt-12">
+          {steps.map((step, index) => (
+            <StepItem key={index} number={step.number} content={step.content} />
+          ))}
         </div>
 
-        <div className="flex gap-8 items-center self-start mt-12 max-md:mt-10">
+        {/* Button */}
+        <div className="mt-12">
           <ActionButton text="Book a shoot" onClick={handleBookClick} />
         </div>
       </div>
-
-      <BorderDecoration />
-      <BorderDecoration />
     </section>
   );
 };
