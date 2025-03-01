@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface GalleryImageProps {
@@ -11,11 +10,13 @@ export const GalleryImage: React.FC<GalleryImageProps> = ({
   className = "",
 }) => {
   return (
-    <img
-      loading="lazy"
-      src={src}
-      className={`object-contain ${className}`}
-      alt="Gallery"
-    />
+    <div className="gallery-image-container overflow-hidden rounded-2xl">
+      <img
+        loading="lazy"
+        src={src}
+        className={`gallery-image object-cover w-full h-full ${className}`}
+        alt="Gallery"
+      />
+    </div>
   );
 };
