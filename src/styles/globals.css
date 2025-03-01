@@ -266,3 +266,28 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* Custom CSS for unique elements */
+.custom-hero-bg {
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-testimonial-carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.custom-testimonial-card {
+  scroll-snap-align: start;
+}
+
+.custom-discount-carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.custom-discount-card {
+  scroll-snap-align: start;
+}
