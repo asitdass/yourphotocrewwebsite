@@ -29,7 +29,7 @@ export const GettingStarted = () => {
   };
 
   return (
-    <section className="m-4 getting-started-section relative bg-black/30 py-20 px-10 rounded-3xl overflow-hidden">
+    <section className="m-16 getting-started-section relative bg-black/30 py-20 px-10 rounded-3xl overflow-hidden">
       {/* Background Image */}
       <img
         loading="lazy"

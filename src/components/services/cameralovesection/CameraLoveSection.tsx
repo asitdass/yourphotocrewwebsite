@@ -25,7 +25,7 @@ export const CameraLoveSection = () => {
   ];
 
   return (
-    <article className="m-4 flex flex-col md:flex-row gap-10 justify-center items-center text-black p-10 rounded-[30px]">
+    <article className="m-16 flex flex-col md:flex-row gap-10 justify-center items-center text-black p-10 rounded-[30px]">
       {/* Left Side: Reel Video */}
       <div className="w-full md:w-[40%] flex justify-center items-center camera-love-animate-fade-in-left">
         <div className="relative w-full max-w-[400px] h-[600px] rounded-[30px] overflow-hidden shadow-2xl">

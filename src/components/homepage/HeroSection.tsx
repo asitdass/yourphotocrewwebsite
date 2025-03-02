@@ -8,15 +8,19 @@ const HeroSection: React.FC = () => {
   const slides = [
     {
       image: "/assets/homepage/hero/image-1.jpg",
-      title: "Capture Timeless Moments",
+      title: "Capture Moments, Not Budgets",
     },
     {
       image: "/assets/homepage/hero/image-2.jpg",
-      title: "Professional Photoshoots",
+      title: "Shoot At A Price Of A Coffee Date🤩",
     },
     {
       image: "/assets/homepage/hero/image-3.jpg",
-      title: "Affordable & Fun",
+      title: "Better Than Your Buddy's Phone😎",
+    },
+    {
+      image: "/assets/homepage/hero/image-4.jpg",
+      title: "Come Get 'THAT PIC'✨",
     },
   ];
 
@@ -44,7 +48,7 @@ const HeroSection: React.FC = () => {
             className="w-full h-full object-cover"
           />
           {/* Dark Shadow Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-10"></div>
         </div>
       ))}
 
@@ -59,9 +63,11 @@ const HeroSection: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-tertiary mb-6 leading-tight">
             Capture Timeless Moments with YourPhotoCrew
           </h1>
-          <p className="text-xl md:text-2xl text-tertiary mb-8">
-            Affordable, Fun, and Professional Photoshoots
-          </p>
+          {slides[currentSlide].title && (
+            <p className="text-xl md:text-2xl text-tertiary mb-8">
+              {slides[currentSlide].title}
+            </p>
+          )}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a
               href="#services"

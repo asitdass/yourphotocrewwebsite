@@ -21,12 +21,12 @@ const SocialLinks = () => {
     <div
       className={`${
         isSticky
-          ? 'fixed bottom-0 left-0 w-full bg-white shadow-lg z-50 animate-slide-up items-center flex justify-between'
+          ? 'fixed bottom-0 left-0 w-full bg-quaternary shadow-lg z-50 animate-slide-up items-center flex flex-start gap-4'
           : 'flex flex-col justify-center relative mt-[46px] max-md:mt-10 flex-start'
       } h-[100px] p-8 transition-all duration-300`}
     >
       {/* Title */}
-      <div className="text-black text-lg font-semibold mb-4">Book Your Tickets</div>
+      <div className={`${isSticky ? 'hidden' : ''} text-black text-lg font-semibold mb-4`}>Book Your Tickets</div>
 
       {/* Buttons Container */}
       <div className="flex gap-8">

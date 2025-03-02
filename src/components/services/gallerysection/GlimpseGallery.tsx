@@ -2,7 +2,7 @@ import React from "react";
 
 export const GlimpseGallery: React.FC = () => {
   return (
-    <section className="m-4 glimpse-gallery py-20 px-10">
+    <section className="m-16 glimpse-gallery py-20 px-10">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <h2 className="text-4xl font-extrabold text-[#2c3e50] mb-4">

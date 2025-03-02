@@ -27,7 +27,7 @@ const FAQItem = ({ item }: FAQItemProps) => {
       </button>
       {isExpanded && (
         <div className="px-5 pb-5 max-sm:px-4 max-sm:pb-4">
-          <p className="text-neutral-900 text-opacity-80">{item.answer}</p>
+          <p className="text-neutral-900 text-opacity-80" dangerouslySetInnerHTML={{ __html: item.answer }}></p>
         </div>
       )}
     </article>
