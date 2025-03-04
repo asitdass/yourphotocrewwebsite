@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "About", "Services", "Gallery", "Contact"].map((item) => {
+            {["Home","Sheduled Services", "Gallery", "Contact"].map((item) => {
               const route = item === "Home" ? "/" : `/${item.toLowerCase()}`; // Redirect to '/' for Home
               const isActive = router.pathname === route;
 
@@ -68,12 +68,12 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <Link
+            {/* <Link
               href="/contact"
               className="bg-secondary text-tertiary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               Book Now
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,7 +100,7 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          {["Home", "About", "Services", "Gallery", "Contact"].map((item) => {
+          {["Home","Sheduled Services", "Gallery", "Contact"].map((item) => {
             const route = item === "Home" ? "/" : `/${item.toLowerCase()}`; // Redirect to '/' for Home
             const isActive = router.pathname === route;
 
@@ -119,13 +119,13 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Link
+          {/* <Link
             href="/contact"
             className="bg-secondary text-tertiary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-center"
             onClick={() => setIsMenuOpen(false)} // Close menu on click
           >
             Book Now
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

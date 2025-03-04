@@ -58,16 +58,23 @@ const HeroSection: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-tertiary mb-6 leading-tight">
-            Capture Timeless Moments with YourPhotoCrew
-          </h1>
           {slides[currentSlide].title && (
-            <p className="text-xl md:text-2xl text-tertiary mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold text-tertiary mb-6 leading-tight w-full">
               {slides[currentSlide].title}
-            </p>
+            </h1>
+            // <p className="text-xl md:text-2xl text-tertiary mb-8">
+            //   {slides[currentSlide].title}
+            // </p>
           )}
+          <p className="text-tertiary mb-8 italic">
+            "We specialize in portrait photography for first-timers, so much so
+            that all you have to do is just show up. Camera shy or out of poses?
+            Don’t worry—we even hire someone to keep you laughing and posing
+            naturally. And with our affordable prices, having great photos go
+            from ‘good to have’ to ‘too good not to have’"
+          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a
               href="#services"
@@ -75,7 +82,7 @@ const HeroSection: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-secondary text-tertiary px-8 py-3 rounded-full font-medium text-lg hover:bg-opacity-90 transition-all duration-300"
             >
-              Book Now
+              Schedule Shoot
             </motion.a>
             <motion.a
               href="#gallery"
