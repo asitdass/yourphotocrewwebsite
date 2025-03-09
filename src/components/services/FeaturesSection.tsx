@@ -2,18 +2,24 @@
 
 import React from "react";
 import { FeatureCard } from "./FeatureCard";
+import {ShieldCheck, MapPinHouse} from 'lucide-react';
 
 export const FeaturesSection = () => {
   const features = [
     {
       icon: "assets/services/features/pe.svg",
       title: "Personalized Experience",
-      description: "Only 2 people per photographer for focused attention",
+      description: "Only 2 people per photographer for focused attention NO BYSTANDERS",
     },
     {
       icon: "assets/services/features/pt.svg",
       title: "Professional Team",
       description: "Dedicated assistant to help with poses and candid moments",
+    },
+    {
+      icon: "assets/services/features/vt.svg",
+      title: "Partnered with a variety of Venue types",
+      description: "Explore diverse, private-themed settings like gyms, cafes, nature parks, and more—all within walking distance, complete with wardrobe-changing facilities.",
     },
     {
       icon: "assets/services/features/ap.svg",
@@ -26,6 +32,11 @@ export const FeaturesSection = () => {
       description:
         "Thematic wardrobe provided for males (females can bring their own)",
     },
+    {
+      icon: "assets/services/features/qa.svg",
+      title: "Quality Assurance",
+      description: "We don’t move to the next theme until YOU say there are at least 2 great clicks in any theme.",
+    },
   ];
 
   return (
@@ -36,8 +47,7 @@ export const FeaturesSection = () => {
             What makes us stand out of the crowd?
           </h2>
           <p className="flex-1 shrink text-lg leading-8 basis-0 max-md:max-w-full">
-            Think photoshoots are only for fancy occasions or dating apps? Nope.
-            They're for everyone, and here's why:
+          Here’s why our scheduled shoot is for you!
           </p>
         </header>
 

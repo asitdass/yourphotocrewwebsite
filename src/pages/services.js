@@ -10,6 +10,8 @@ import DiscountSection from '@/components/services/discount/OffersSection';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import TestimonialsSection from '@/components/homepage/TestimonialsSection';
+import BtsSection from '@/components/services/BtsSection';
 const services = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -23,14 +25,19 @@ const services = () => {
       {/* Features Section */}
       <FeaturesSection />
 
+      {/* bts section */}
+      <BtsSection />
+
+       {/* Getting Started Section */}
+       <GettingStarted />
+
       {/* Portfolio Grid */}
       <GlimpseGallery />
 
-      {/* Getting Started Section */}
-      <GettingStarted />
-
       {/* Pricing Section */}
       <DiscountSection />
+
+      <TestimonialsSection />
 
       {/* FAQ Section */}
       <FAQ />

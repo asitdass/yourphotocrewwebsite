@@ -154,7 +154,7 @@ const TestimonialsSection: React.FC = () => {
               href="#contact"
               className="inline-block bg-secondary text-tertiary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
-              Read More Reviews
+              Read Google Reviews
             </a>
           </motion.div>
         </motion.div>

@@ -147,12 +147,12 @@ const NeedSection: React.FC = () => {
                       />
                     ))}
                   </div>
-                  <a
+                  {/* <a
                     href="#services"
                     className="inline-block bg-secondary text-tertiary px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
                   >
                     Book Your Shoot
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </motion.div>

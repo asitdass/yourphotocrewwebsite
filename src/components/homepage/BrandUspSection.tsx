@@ -64,7 +64,7 @@ const BrandUspSection: React.FC = () => {
           className="max-w-6xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Brand Promise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Why Choose Us</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
               Here's why we are, exactly who you need!
@@ -94,14 +94,14 @@ const BrandUspSection: React.FC = () => {
             ))}
           </motion.div>
 
-          <motion.div variants={itemVariants} className="text-center mt-16">
+          {/* <motion.div variants={itemVariants} className="text-center mt-16">
             <a
               href="#services"
               className="inline-block bg-secondary text-tertiary px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               Explore Our Services
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

@@ -9,6 +9,7 @@ import NeedSection from "@/components/homepage/NeedSection";
 import ServicesSection from "@/components/homepage/ServicesSection";
 import TestimonialsSection from "@/components/homepage/TestimonialsSection";
 import Navbar from "@/components/Navbar";
+import GlimpseGallery from "@/components/services/gallerysection/GlimpseGallery";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const IndexPage = () => {
@@ -17,13 +18,14 @@ const IndexPage = () => {
       <Navbar />
       <HeroSection />
       <HookupText />
-      <AboutSection />
       <NeedSection />
       <BrandUspSection />
       <ServicesSection />
-      <GallerySection />
+      {/* <GallerySection /> */}
+      <AboutSection />
+      <GlimpseGallery />
       <TestimonialsSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <Footer />
       <WhatsAppButton />
     </div>

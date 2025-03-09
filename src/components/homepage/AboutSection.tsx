@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Camera, Users, Clock, Sparkles } from 'lucide-react';
+import { Camera, Users, Clock, Sparkles, Eye, ShieldMinus, Ribbon} from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   const [ref, inView] = useInView({
@@ -54,35 +54,35 @@ const AboutSection: React.FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="flex md:flex-col gap-12 items-center mb-16">
             <motion.div variants={itemVariants} className="order-2 md:order-1">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="flex align-center gap-6">
                 {[
                   {
-                    icon: <Camera className="w-10 h-10 text-secondary" />,
-                    title: 'Affordable',
+                    icon: <ShieldMinus className="w-10 h-10 text-secondary" />,
+                    title: 'Our Mission',
                     description: 'High-quality photoshoots accessible for the middle class',
                   },
                   {
-                    icon: <Sparkles className="w-10 h-10 text-secondary" />,
-                    title: 'Timeless Photos',
+                    icon: <Eye className="w-10 h-10 text-secondary" />,
+                    title: 'Our Vision',
                     description: 'Capture memories at iconic locations',
                   },
                   {
                     icon: <Users className="w-10 h-10 text-secondary" />,
-                    title: 'Wardrobe Provided',
+                    title: 'Our Team',
                     description: 'Complete styling for males included',
                   },
                   {
-                    icon: <Clock className="w-10 h-10 text-secondary" />,
-                    title: 'Quick Turnaround',
+                    icon: <Ribbon className="w-10 h-10 text-secondary" />,
+                    title: 'Tailored for 1st Timers',
                     description: 'Receive your edited photos within 48 hours',
                   },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
                     variants={itemVariants}
-                    className="bg-quaternary p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                    className="w-full md:w-1/2 bg-quaternary p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="mb-4">{item.icon}</div>
                     <h3 className="text-xl font-semibold text-primary mb-2">{item.title}</h3>
@@ -90,17 +90,17 @@ const AboutSection: React.FC = () => {
                   </motion.div>
                 ))}
               </div>
-              <motion.div variants={itemVariants} className="mt-8">
+              {/* <motion.div variants={itemVariants} className="mt-8">
                 <a
                   href="#services"
                   className="inline-block bg-secondary text-tertiary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
                 >
                   Learn More About Us
                 </a>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
-            <motion.div variants={itemVariants} className="order-1 md:order-2">
+            {/* <motion.div variants={itemVariants} className="order-1 md:order-2">
               <div className="relative">
                 <div className="grid grid-cols-2 gap-4">
                   {teamImages.map((image, index) => (
@@ -123,7 +123,7 @@ const AboutSection: React.FC = () => {
                   <p className="text-sm">Professional Photographers</p>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </div>

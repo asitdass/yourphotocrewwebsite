@@ -5,41 +5,36 @@ const HookupText: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"], // Trigger when the component enters and leaves viewport
+    offset: ["start end", "end start"], // Triggers animation within viewport
   });
 
-  // Split the text into individual letters
   const hookupText =
-    "We specialize in portrait photography for first-timers, so much so that all you have to do is just show up. Camera shy or out of poses? Don’t worry—we even hire someone to keep you laughing and posing naturally. And with our affordable prices, having great photos go from ‘good to have’ to ‘too good not to have’.";
+    "Our goal is to make high-quality candid photoshoots accessible to the average middle class. Our aim is to be the digital version of the same ‘physical album’ which our parents/grandparents used to have with a bunch of timeless clicks. We operate such that all you have to say is yes & the rest is taken care of. We go above & beyond to ensure that every shoot is a success.";
+
   const letters = hookupText.split("");
 
   return (
-    <div ref={ref} className="w-full h-screen flex items-center justify-center p-8 bg-[#F8F2EB]">
-      <motion.div
-        className="text-4xl md:text-6xl font-bold text-center max-w-4xl leading-tight"
-        style={{ color: "#181818" }} // Base dark color
-      >
-        {letters.map((letter, index) => {
-          // Calculate a staggered progress for each letter
-          const letterProgress = useTransform(
-            scrollYProgress,
-            [index / letters.length, (index + 10) / letters.length], // Range for each letter
-            [100, 900] // Font weight from normal to bold
-          );
+    <section className="w-full h-[40vh] flex items-center justify-center">
+      <div ref={ref} className="max-w-4xl px-6">
+        <motion.p
+          className="text-lg md:text-xl font-light text-justify leading-relaxed text-[#181818]"
+        >
+          {letters.map((letter, index) => {
+            const letterWeight = useTransform(
+              scrollYProgress,
+              [index / letters.length , (index + 5) / letters.length], // Faster transition
+              [200, 800] // Lighter to bold effect
+            );
 
-          return (
-            <motion.span
-              key={index}
-              style={{
-                fontWeight: letterProgress,
-              }}
-            >
-              {letter}
-            </motion.span>
-          );
-        })}
-      </motion.div>
-    </div>
+            return (
+              <motion.span key={index} style={{ fontWeight: letterWeight }}>
+                {letter}
+              </motion.span>
+            );
+          })}
+        </motion.p>
+      </div>
+    </section>
   );
 };
 

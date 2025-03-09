@@ -21,7 +21,7 @@ const SocialLinks = () => {
     <div
       className={`${
         isSticky
-          ? 'fixed bottom-0 left-0 w-full bg-quaternary shadow-lg z-50 animate-slide-up items-center flex flex-start gap-4'
+          ? 'fixed bottom-0 left-0 w-full bg-primary shadow-lg z-50 animate-slide-up items-center flex flex-start gap-4'
           : 'flex flex-col justify-center relative mt-[46px] max-md:mt-10 flex-start'
       } h-[100px] p-8 transition-all duration-300`}
     >
@@ -32,7 +32,7 @@ const SocialLinks = () => {
       <div className="flex gap-8">
         {/* Paytm Insider Button */}
         <button
-          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
+          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center bg-tertiary rounded-md shadow-lg hover:scale-110 transition-transform`}
           >
           <img
             src="/assets/homepage/paytm-insider.svg" // Replace with Paytm Insider logo URL
@@ -43,7 +43,7 @@ const SocialLinks = () => {
 
         {/* BookMyShow Button */}
         <button
-          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
+          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
         >
           <img
             src="/assets/homepage/bookmyshow-logo.svg" // Replace with BookMyShow logo URL
@@ -54,13 +54,14 @@ const SocialLinks = () => {
 
         {/* WhatsApp Button */}
         <button
-          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
+          className={`${isSticky ? 'w-auto h-16' : 'w-auto h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform px-2`}
           >
           <img
-            src="/assets/homepage/whatsapp-logo.svg" // Replace with WhatsApp logo URL
+            src="/assets/homepage/whatsapp.svg" // Replace with WhatsApp logo URL
             alt="WhatsApp Logo"
-            className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
+            className={`${isSticky ? 'w-10' : 'w-14'} group-hover:scale-110 transition-transform`}
           />
+          <p className='text-primary text-sm font-semibold'>Cheaper & No Prepayment!</p>
         </button>
       </div>
     </div>
