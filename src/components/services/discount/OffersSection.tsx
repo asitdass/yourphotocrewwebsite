@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChevronLeft, ChevronRight, Tag, Calendar, Clock } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Tag, Calendar, Clock, Camera } from 'lucide-react';
 
 const OffersSection: React.FC = () => {
   const [ref, inView] = useInView({
@@ -207,10 +207,15 @@ const OffersSection: React.FC = () => {
                         <span>{offer.code}</span>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-75 text-tertiary px-4 py-2 text-sm flex items-center justify-between">
-                        <div className="flex items-center">
-                          <Calendar className="w-4 h-4 mr-1" />
-                          <span>{formatDate(offer.startDate)} - {formatDate(offer.endDate)}</span>
-                        </div>
+                      <div className="flex items-center">
+                        <Camera className="w-4 h-4 mr-1" />
+                        <span>
+                          {activeStatus === 'active'
+                            ? `${formatDate(new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString())} - ${formatDate(offer.endDate)}`
+                            : `${formatDate(offer.startDate)} - ${formatDate(offer.endDate)}`
+                          }
+                        </span>
+                      </div>
                       </div>
                     </div>
                     <div className="p-6">
@@ -220,7 +225,9 @@ const OffersSection: React.FC = () => {
                       <div className="flex items-center text-sm text-gray-500 mb-4">
                         <Clock className="w-4 h-4 mr-1" />
                         {activeStatus === 'active' && (
-                          <span>Valid until {formatDate(offer.endDate)}</span>
+                          <span>
+                            Valid from {formatDate(new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString())} to {formatDate(offer.endDate)}
+                          </span>
                         )}
                         {activeStatus === 'future' && (
                           <span>Starting from {formatDate(offer.startDate)}</span>
@@ -232,11 +239,15 @@ const OffersSection: React.FC = () => {
                       
                       {activeStatus !== 'past' && (
                         <a
-                          href="#contact"
+                          href={`https://wa.me/7676235229?text=${encodeURIComponent(
+                            `COUPON CODE: ${offer.code}\nDiscount Name: ${offer.title}\nCurrent Date: ${new Date().toLocaleDateString()}`
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-block bg-secondary text-tertiary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
                         >
-                          Claim Offer
-                        </a>
+                        Claim Offer
+                      </a>
                       )}
                     </div>
                   </div>

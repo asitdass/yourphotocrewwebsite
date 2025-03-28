@@ -41,9 +41,27 @@ const ScheduledShoot = () => {
         </div>
 
         {/* Right Side PhotoGrid */}
-        <div className="w-full md:w-[40%] max-md:order-1">
+        {/* <div className="w-full md:w-[40%] max-md:order-1">
           <PhotoGrid />
+        </div> */}
+        <div className="w-full md:w-[40%] flex justify-center items-center camera-love-animate-fade-in-left">
+        <div className="relative w-full max-w-[400px] h-[600px] rounded-[30px] overflow-hidden shadow-2xl">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source
+              src="/assets/services/cameralovesection/reel-video.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>
+      </div>
       </div>
     </section>
   );

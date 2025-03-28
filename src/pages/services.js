@@ -12,6 +12,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import TestimonialsSection from '@/components/homepage/TestimonialsSection';
 import BtsSection from '@/components/services/BtsSection';
+import NewTestimonialsSection from '@/components/services/NewTestimonialSection';
 const services = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -37,7 +38,7 @@ const services = () => {
       {/* Pricing Section */}
       <DiscountSection />
 
-      <TestimonialsSection />
+      <NewTestimonialsSection />
 
       {/* FAQ Section */}
       <FAQ />

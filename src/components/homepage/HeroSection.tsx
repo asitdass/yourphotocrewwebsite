@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown} from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
-const HeroSection: React.FC = () => {
+const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const firstColumnRef = useRef(null);
+  const secondColumnRef = useRef(null);
+  const scrollInterval = useRef(null);
 
   const slides = [
     { image: "/assets/homepage/hero/image-1.jpg", title: "Capture Moments, Not Budgets📸" },
@@ -12,15 +15,72 @@ const HeroSection: React.FC = () => {
     { image: "/assets/homepage/hero/image-4.jpg", title: "Come Get 'THAT PIC'✨" },
   ];
 
+  const images = [
+    "/assets/gallery/male/male-1.JPG",
+    "/assets/gallery/female/female-1.jpg",
+    "/assets/gallery/couplesection/couple-1.JPG",
+    "/assets/gallery/businessprofile/businessprofile-1.jpg",
+    "/assets/gallery/male/male-2.jpg",
+    "/assets/gallery/female/female-2.jpg",
+    "/assets/gallery/couplesection/couple-2.jpg",
+    "/assets/gallery/businessprofile/businessprofile-2.jpg",
+    "/assets/gallery/male/male-3.jpg",
+    "/assets/gallery/female/female-3.jpg",
+    "/assets/gallery/couplesection/couple-3.JPG",
+    "/assets/gallery/businessprofile/businessprofile-3.JPG",
+    "/assets/gallery/male/male-4.jpg",
+    "/assets/gallery/female/female-4.JPG",
+    "/assets/gallery/couplesection/couple-4.jpg",
+    "/assets/gallery/businessprofile/businessprofile-4.JPG",
+    "/assets/gallery/male/male-5.JPG",
+    "/assets/gallery/female/female-5.jpg",
+    "/assets/gallery/couplesection/couple-5.jpg",
+    "/assets/gallery/businessprofile/businessprofile-5.jpg",
+  ];
+
+  // Duplicate images to create seamless loop
+  const duplicatedImages = [...images, ...images];
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setCurrentSlide(prev => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
+  useEffect(() => {
+    const startScrolling = () => {
+      const scrollStep = 1;
+      const scrollDelay = 50;
+
+      scrollInterval.current = setInterval(() => {
+        if (firstColumnRef.current) {
+          firstColumnRef.current.scrollTop += scrollStep;
+          if (firstColumnRef.current.scrollTop >= firstColumnRef.current.scrollHeight / 2) {
+            firstColumnRef.current.scrollTop = 0;
+          }
+        }
+
+        if (secondColumnRef.current) {
+          secondColumnRef.current.scrollTop -= scrollStep;
+          if (secondColumnRef.current.scrollTop <= 0) {
+            secondColumnRef.current.scrollTop = secondColumnRef.current.scrollHeight / 2;
+          }
+        }
+      }, scrollDelay);
+    };
+
+    startScrolling();
+
+    return () => {
+      if (scrollInterval.current) {
+        clearInterval(scrollInterval.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="home" className="bg-primary relative h-screen flex flex-col md:flex-row items-center px-6 md:px-16">
+    <section id="home" className="bg-primary relative h-screen flex flex-col md:flex-row items-center px-6 md:px-16 overflow-hidden">
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center h-full text-left">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -28,9 +88,9 @@ const HeroSection: React.FC = () => {
             {slides[currentSlide].title}
           </h1>
           <p className="text-tertiary mb-8 italic">
-            "We specialize in portrait photography for first-timers. Camera shy or out of poses? Don’t worry—we hire
-            someone to keep you laughing and posing naturally. And with our affordable prices, great photos go from ‘good
-            to have’ to ‘too good not to have’."
+            "We specialize in portrait photography for first-timers. Camera shy or out of poses? Don't worry—we hire
+            someone to keep you laughing and posing naturally. And with our affordable prices, great photos go from 'good
+            to have' to 'too good not to have'."
           </p>
           <div className="flex space-x-4 mb-6">
             <motion.a
@@ -42,7 +102,7 @@ const HeroSection: React.FC = () => {
               Schedule Shoot
             </motion.a>
             <motion.a
-              href="#gallery"
+              href="/gallery"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-tertiary text-tertiary px-6 py-3 rounded-full font-medium text-lg hover:bg-tertiary hover:text-primary transition-all"
@@ -62,29 +122,60 @@ const HeroSection: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Right Photo Grid with Animations */}
+      {/* Right Photo Grid with Vertical Scrolling */}
       <motion.div
-        className="w-full md:w-1/2 grid grid-cols-2 gap-2 md:gap-4 h-full p-4 md:p-20"
+        className="w-full md:w-1/2 flex gap-2 md:gap-4 h-full p-4 md:p-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       >
-        {slides.map((slide, index) => (
-          <motion.div
-            key={index}
-            className="rounded-lg overflow-hidden relative"
-            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
-            whileHover={{ scale: 1.1, rotate: 2 }}
-          >
-            <img
-              src={slide.image}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-            />
-          </motion.div>
-        ))}
+        {/* First Column - Scrolls Down */}
+        <div
+          ref={firstColumnRef}
+          className="w-1/2 flex flex-col gap-2 md:gap-4 overflow-y-hidden h-full"
+          style={{
+            scrollBehavior: 'auto',
+          }}
+        >
+          {duplicatedImages.map((image, index) => (
+            <motion.div
+              key={`first-col-${index}`}
+              className="rounded-lg overflow-hidden flex-shrink-0"
+              style={{ height: '300px' }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Second Column - Scrolls Up */}
+        <div
+          ref={secondColumnRef}
+          className="w-1/2 flex flex-col gap-2 md:gap-4 overflow-y-hidden h-full"
+          style={{
+            scrollBehavior: 'auto',
+          }}
+        >
+          {[...duplicatedImages].reverse().map((image, index) => (
+            <motion.div
+              key={`second-col-${index}`}
+              className="rounded-lg overflow-hidden flex-shrink-0"
+              style={{ height: '300px' }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       {/* Scroll Down Indicator */}

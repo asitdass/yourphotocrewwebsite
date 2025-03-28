@@ -1,61 +1,128 @@
 "use client";
 
 import { ActionButton } from "./ActionButton";
-import { StepItem } from "./StepItem";
+import { motion } from "framer-motion";
 
 const steps = [
   {
     number: 1,
-    content: "Pick the shoot you want: a classic one or a café session",
+    title: "Book Your Slot",
+    content: "Choose between online platforms (BookMyShow, PayTM, Insider) with full prepayment or direct booking via WhatsApp (Rs 300 pre-booking, adjusted later).",
   },
   {
     number: 2,
-    content: "Fill out our quick booking form [Insert Link to Form]",
+    title: "Arrive On Time",
+    content: "Reach the venue on your scheduled date; our team and venue staff will assist you throughout the shoot.",
   },
   {
     number: 3,
-    content: "Pick a date, a time, and tell us where",
+    title: "Enjoy a Hassle-Free Experience",
+    content: "We handle themes, wardrobe changes (on-site facilities), and candid moments—just bring your smile!",
   },
   {
     number: 4,
-    content: "Done! Just show up, relax, and let us work our magic",
+    title: "Receive Your Photos",
+    content: "Get the entire camera roll via Google Drive by the end of the shoot day.",
+  },
+  {
+    number: 5,
+    title: "Select & Get Edits",
+    content: "Share your preferred filenames for editing, and receive polished photos within 3 days.",
   },
 ];
 
 export const GettingStarted = () => {
   const handleBookClick = () => {
-    // Handle booking action
     console.log("Booking initiated");
   };
 
   return (
-    <section className="m-16 getting-started-section relative bg-black/30 py-20 px-10 rounded-3xl overflow-hidden">
-      {/* Background Image */}
-      <img
-        loading="lazy"
-        src="assets/services/gettingstarted/image-7.png"
-        className="absolute inset-0 w-full h-full object-cover"
-        alt="Background decoration"
-      />
+    <section className="relative py-20 px-6 lg:px-8 overflow-hidden min-h-[600px] flex items-center">
+      {/* Background Image with overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          loading="lazy"
+          src="assets/services/gettingstarted/image-7.png"
+          className="w-full h-full object-cover object-center"
+          alt="Photoshoot background"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
+      </div>
 
-      {/* Content */}
-      <div className="relative max-w-7xl mx-auto text-center">
+      {/* Content - Left aligned */}
+      <div className="relative max-w-4xl mx-auto z-10 w-full">
         {/* Heading */}
-        <h1 className="text-5xl font-bold text-white mb-8">
-          Getting started is as easy as 1, 2, and 3
-        </h1>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-12 text-left"
+        >
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-3">
+            Getting started is easy
+          </h1>
+          <p className="text-xl text-white/90">
+            Follow these simple steps to book your perfect photoshoot experience
+          </p>
+        </motion.div>
 
-        {/* Steps */}
-        <div className="steps-container flex flex-col gap-6 mt-12">
+        {/* Steps - Left aligned with better number styling */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="space-y-6 max-w-2xl"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
           {steps.map((step, index) => (
-            <StepItem key={index} number={step.number} content={step.content} />
+            <motion.div 
+              key={index}
+              className="flex items-start gap-4"
+              variants={{
+                hidden: { x: -20, opacity: 0 },
+                visible: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                  },
+                },
+              }}
+            >
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50">
+                <span className="text-white text-lg font-bold">{step.number}</span>
+              </div>
+              <div className="text-white">
+                <h3 className="text-xl font-semibold mb-1">{step.title}</h3>
+                <p className="text-white/90">{step.content}</p>
+              </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Button */}
-        <div className="mt-12">
-          <ActionButton text="Book a shoot" onClick={handleBookClick} />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mt-12 text-left"
+        >
+          <ActionButton 
+            text="Book Your Shoot Now" 
+            onClick={handleBookClick}
+            className="px-8 py-3 text-lg font-medium hover:scale-105 transition-transform bg-white text-black hover:bg-white/90"
+          />
+        </motion.div>
       </div>
     </section>
   );

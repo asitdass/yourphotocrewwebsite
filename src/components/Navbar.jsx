@@ -25,6 +25,8 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navItems = [{ name: "Home", route: "/" }, { name: "Gallery", route: "/gallery" }, { name: "Scheduled Services", route: "/services" }, { name: "Contact", route: "/contact" }];
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -50,8 +52,8 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {["Home","Sheduled Services", "Gallery", "Contact"].map((item) => {
-              const route = item === "Home" ? "/" : `/${item.toLowerCase()}`; // Redirect to '/' for Home
+            {navItems.map((item) => {
+              const route = item.name === "Home" ? "/" : `/${item.route.toLowerCase()}`; // Redirect to '/' for Home
               const isActive = router.pathname === route;
 
               return (
@@ -64,7 +66,7 @@ const Navbar = () => {
                       : "text-tertiary hover:text-secondary"
                   } font-medium transition-colors duration-300`}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               );
             })}
@@ -100,8 +102,8 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          {["Home","Sheduled Services", "Gallery", "Contact"].map((item) => {
-            const route = item === "Home" ? "/" : `/${item.toLowerCase()}`; // Redirect to '/' for Home
+          {navItems.map((item) => {
+            const route = item.name === "Home" ? "/" : `/${item.route.toLowerCase()}`; // Redirect to '/' for Home
             const isActive = router.pathname === route;
 
             return (
@@ -115,7 +117,7 @@ const Navbar = () => {
                 } font-medium transition-colors duration-300`}
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
-                {item}
+                {item.name}
               </Link>
             );
           })}

@@ -37,7 +37,7 @@ const BtsSection: React.FC = () => {
     "About quality?",
     "What will the process be like in person?",
     "Are the crew friendly?",
-    "Is it going to be awkward...?",
+    "Is it going to be awkward... I've never done anything like this before?",
     "I'm not someone good with poses. I get camera shy..."
   ];
 
@@ -63,64 +63,79 @@ const BtsSection: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Behind The Scenes</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
             <p className="text-lg md:text-xl text-gray-700">
-              We exclusively click first-timers, only.
+            All first-timers have a similar journey with us.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Left column - Content */}
-            <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6">
+            <motion.div variants={itemVariants} className="space-y-6">
               <div className="bg-tertiary rounded-2xl p-8 shadow-lg">
                 <h3 className="text-2xl font-bold text-primary mb-6">
-                  The First-Timer Journey
+                  The First-Timer Experience
                 </h3>
-                <p className="text-gray-700 mb-8">
-                  All first-timers have a similar journey with us. The very first minute, 
-                  the feeling of anxiety and these common doubts:
+                <p className="text-gray-700 mb-8"> 
+                  We exclusively click first-timers. The very first minute, 
+                  the feeling of anxiety
                 </p>
-                <div className="relative h-20">
-                  <AnimatePresence mode="wait">
+                
+                {/* All doubts visible but one highlighted */}
+                <div className="space-y-4 mb-8">
+                  {doubts.map((doubt, index) => (
                     <motion.div
-                      key={activeDoubt}
-                      initial={{ opacity: 0, x: 50 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -50 }}
-                      className="absolute inset-0 flex items-center"
+                      key={index}
+                      className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
+                        activeDoubt === index ? 'bg-secondary/10 text-primary' : 'text-gray-500'
+                      }`}
                     >
-                      <div className="flex items-center space-x-3 text-gray-700">
-                        <ChevronRight className="w-5 h-5 text-secondary" />
-                        <span className="text-lg">{doubts[activeDoubt]}</span>
-                      </div>
+                      <ChevronRight 
+                        className={`w-5 h-5 ${
+                          activeDoubt === index ? 'text-secondary' : 'text-gray-400'
+                        }`} 
+                      />
+                      <span className={`${
+                        activeDoubt === index ? 'font-medium' : ''
+                      }`}>
+                        {doubt}
+                      </span>
                     </motion.div>
-                  </AnimatePresence>
+                  ))}
+                </div>
+
+                <div className="border-t border-gray-200 pt-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <Smile className="w-8 h-8 text-secondary" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-primary mb-2">
+                        ALL THESE DOUBTS FADE AWAY IN THE VERY NEXT 5 MIN...
+                      </h4>
+                      <p className="text-gray-700 mb-4">
+                        COME SEE IT FOR YOURSELF even just as a viewer. WE HIRE A SHOOT 'FRIEND' 
+                        TAILORING THE PROCESS FOR A FIRST TIMER.
+                      </p>
+                      {/* <motion.a
+                        href="https://www.instagram.com/yourphotocrew"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center space-x-2 text-secondary hover:text-secondary/80 transition-colors duration-300"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <Instagram className="w-5 h-5" />
+                        <span className="font-medium">Watch More BTS Reels</span>
+                      </motion.a> */}
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <motion.div
-                variants={itemVariants}
-                className="bg-primary rounded-2xl p-8 text-tertiary"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <Smile className="w-8 h-8 text-secondary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">
-                      ALL THESE DOUBTS FADE AWAY IN THE VERY NEXT 5 MIN...
-                    </h4>
-                    <p className="mb-4">
-                      COME SEE IT FOR YOURSELF even just as a viewer. WE HIRE A SHOOT 'FRIEND' 
-                      TAILORING THE PROCESS FOR A FIRST TIMER.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
             </motion.div>
 
-            {/* Center column - Video */}
+            {/* Right column - Video */}
             <motion.div
               variants={itemVariants}
-              className="lg:col-span-4 relative mx-auto w-full max-w-[350px]"
+              className="relative mx-auto w-full max-w-[350px]"
             >
               <motion.div
                 className={`relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 ${
@@ -137,7 +152,7 @@ const BtsSection: React.FC = () => {
                     className={`w-full h-full rounded-2xl ${
                       isVideoExpanded ? 'max-w-[calc(100vh*9/16)]' : ''
                     }`}
-                    src="https://www.youtube.com/embed/your-video-id"
+                    src="/assets/services/cameralovesection/reel-video.mp4"
                     title="Behind the scenes at YourPhotoCrew"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -175,33 +190,11 @@ const BtsSection: React.FC = () => {
                   onClick={() => setIsVideoExpanded(false)}
                 />
               )}
-            </motion.div>
-
-            {/* Right column - Features */}
-            <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6">
-              <div className="bg-tertiary p-6 rounded-xl shadow-lg">
-                <Camera className="w-8 h-8 text-secondary mb-4" />
-                <h5 className="font-semibold text-lg mb-2 text-primary">Professional Setup</h5>
-                <p className="text-gray-600 text-sm">State-of-the-art equipment and experienced crew</p>
-              </div>
-              
-              <div className="bg-tertiary p-6 rounded-xl shadow-lg">
-                <Users className="w-8 h-8 text-secondary mb-4" />
-                <h5 className="font-semibold text-lg mb-2 text-primary">Friendly Crew</h5>
-                <p className="text-gray-600 text-sm">Dedicated team to make you comfortable</p>
-              </div>
-              
-              <div className="bg-tertiary p-6 rounded-xl shadow-lg">
-                <Heart className="w-8 h-8 text-secondary mb-4" />
-                <h5 className="font-semibold text-lg mb-2 text-primary">Natural Results</h5>
-                <p className="text-gray-600 text-sm">Candid moments captured beautifully</p>
-              </div>
-
               <motion.a
                 href="https://www.instagram.com/yourphotocrew"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-secondary text-tertiary p-4 rounded-xl text-center hover:bg-opacity-90 transition-all duration-300"
+                className="block bg-secondary text-tertiary p-4 rounded-xl text-center hover:bg-opacity-90 transition-all duration-300 mt-6"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

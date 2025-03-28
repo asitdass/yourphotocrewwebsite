@@ -6,7 +6,7 @@ const WhatsAppButton: React.FC = () => {
  const [activeText, setActiveText] = useState(0);
   return (
     <motion.a
-      href="https://wa.me/919876543210"
+      href="https://wa.me/7676235229"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 flex items-center justify-center overflow-hidden"

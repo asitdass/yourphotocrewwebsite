@@ -1,6 +1,7 @@
 import React from "react";
 import { BenefitPoint } from "./BenefitPoint";
 import { Divider } from "./Divider";
+import PhotoGrid from "../hero/PhotoGrid";
 
 export const CameraLoveSection = () => {
   const benefits = [
@@ -27,24 +28,9 @@ export const CameraLoveSection = () => {
   return (
     <article className="m-16 flex flex-col md:flex-row gap-10 justify-center items-center text-black p-10 rounded-[30px]">
       {/* Left Side: Reel Video */}
-      <div className="w-full md:w-[40%] flex justify-center items-center camera-love-animate-fade-in-left">
-        <div className="relative w-full max-w-[400px] h-[600px] rounded-[30px] overflow-hidden shadow-2xl">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source
-              src="/assets/services/cameralovesection/reel-video.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+      <div className="w-full md:w-[40%] max-md:order-1">
+          <PhotoGrid />
         </div>
-      </div>
 
       {/* Right Side: Content */}
       <div className="w-full md:w-[50%] max-w-[674px] camera-love-animate-fade-in-right">

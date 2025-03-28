@@ -171,7 +171,7 @@ const GallerySection: React.FC = () => {
 
           <motion.div variants={itemVariants} className="text-center mt-12">
             <a
-              href="#contact"
+              href=""
               className="inline-block bg-secondary text-tertiary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               View Full Gallery

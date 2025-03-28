@@ -50,7 +50,7 @@ const AboutSection: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Who We Are</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-              We're a passionate team of 20+ photographers dedicated to making high-quality candid photoshoots accessible and fun for everyone.
+            We are a crew dedicated to capturing both your story and persona. Whether it’s a candid café shot, a polished business profile, or a themed portrait, we combine creative expertise with a relaxed experience. We take responsibility for making you feel comfortable and confident, helping you discover your best look while preserving memories and building a strong personal brand.
             </p>
           </motion.div>
 
@@ -61,22 +61,22 @@ const AboutSection: React.FC = () => {
                   {
                     icon: <ShieldMinus className="w-10 h-10 text-secondary" />,
                     title: 'Our Mission',
-                    description: 'High-quality photoshoots accessible for the middle class',
+                    description: 'Making high-quality photography accessible and affordable — helping you look and feel your best.',
                   },
                   {
                     icon: <Eye className="w-10 h-10 text-secondary" />,
-                    title: 'Our Vision',
-                    description: 'Capture memories at iconic locations',
+                    title: 'Our Craft',
+                    description: 'Skilled photographers using top-tier equipment to capture candid, natural moments and polished portraits.',
                   },
                   {
                     icon: <Users className="w-10 h-10 text-secondary" />,
-                    title: 'Our Team',
-                    description: 'Complete styling for males included',
+                    title: 'Our Experience',
+                    description: 'We take responsibility for making you laugh and pose, creating such a comfortable atmosphere that the shoot feels effortless.',
                   },
                   {
                     icon: <Ribbon className="w-10 h-10 text-secondary" />,
-                    title: 'Tailored for 1st Timers',
-                    description: 'Receive your edited photos within 48 hours',
+                    title: 'Our Promise',
+                    description: 'From setting the scene to styling your wardrobe to the final edit — we take care of every detail so you can focus on the moment while we capture it.',
                   },
                 ].map((item, index) => (
                   <motion.div

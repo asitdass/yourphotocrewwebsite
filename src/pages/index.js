@@ -11,6 +11,12 @@ import TestimonialsSection from "@/components/homepage/TestimonialsSection";
 import Navbar from "@/components/Navbar";
 import GlimpseGallery from "@/components/services/gallerysection/GlimpseGallery";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Great_Vibes } from 'next/font/google';
+
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  weight: '400', // Great Vibes only has one weight (400)
+});
 
 const IndexPage = () => {
   return (

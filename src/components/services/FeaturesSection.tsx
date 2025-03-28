@@ -18,8 +18,8 @@ export const FeaturesSection = () => {
     },
     {
       icon: "assets/services/features/vt.svg",
-      title: "Partnered with a variety of Venue types",
-      description: "Explore diverse, private-themed settings like gyms, cafes, nature parks, and more—all within walking distance, complete with wardrobe-changing facilities.",
+      title: "Variety of Partnered Venues",
+      description: "Themed shoots at gyms, cafés, pubs, restaurants, etc. all in walking distance and equipped with changing facilities",
     },
     {
       icon: "assets/services/features/ap.svg",

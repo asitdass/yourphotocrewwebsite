@@ -30,6 +30,7 @@ export const GlimpseGallery: React.FC = () => {
 
           {/* Overlay and Button */}
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <a href="/gallery">
             <button
               className="gallery-button bg-white text-[#2c3e50] px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#f8f2eb] hover:text-black transition-all duration-300"
               onClick={() => {
@@ -39,6 +40,7 @@ export const GlimpseGallery: React.FC = () => {
             >
               View Full Gallery
             </button>
+          </a>
           </div>
         </div>
       </div>

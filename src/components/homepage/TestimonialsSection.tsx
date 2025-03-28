@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Great_Vibes } from 'next/font/google';
+
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  weight: '400', // Great Vibes only has one weight (400)
+});
 
 const TestimonialsSection: React.FC = () => {
   const [ref, inView] = useInView({
@@ -157,6 +163,14 @@ const TestimonialsSection: React.FC = () => {
               Read Google Reviews
             </a>
           </motion.div>
+        </motion.div>
+        <motion.div
+          variants={itemVariants}
+          className="text-center mt-12"
+        >
+          <div className="bg-tertiary rounded-lg shadow-lg p-6 md:p-10 mb-8">
+            <p className={`${greatVibes.className} text-lg md:text-xl text-gray-700 italic mb-6`}>“We don't use your photos for marketing without prior consent. We here at yourphotocrew respect your privacy”</p>
+          </div>
         </motion.div>
       </div>
     </section>

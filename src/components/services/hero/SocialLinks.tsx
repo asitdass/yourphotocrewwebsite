@@ -31,6 +31,7 @@ const SocialLinks = () => {
       {/* Buttons Container */}
       <div className="flex gap-8">
         {/* Paytm Insider Button */}
+        <a href="https://www.district.in/professional-photoshoot-come-get-that-pic-jun23-2024/event" target="_blank" rel="noopener noreferrer">
         <button
           className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center bg-tertiary rounded-md shadow-lg hover:scale-110 transition-transform`}
           >
@@ -40,19 +41,23 @@ const SocialLinks = () => {
             className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
           />
         </button>
+        </a>
 
         {/* BookMyShow Button */}
-        <button
-          className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
-        >
-          <img
-            src="/assets/homepage/bookmyshow-logo.svg" // Replace with BookMyShow logo URL
-            alt="BookMyShow Logo"
-            className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
-          />
-        </button>
+        <a href="https://in.bookmyshow.com/events/professional-photoshoot-come-get-that-pic/ET00401389" target="_blank" rel="noopener noreferrer">
+          <button
+            className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
+          >
+            <img
+              src="/assets/homepage/bookmyshow-logo.svg" // Replace with BookMyShow logo URL
+              alt="BookMyShow Logo"
+              className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
+            />
+          </button>
+        </a>
 
         {/* WhatsApp Button */}
+        <a href="https://wa.me/7676235229" target="_blank" rel="noopener noreferrer">
         <button
           className={`${isSticky ? 'w-auto h-16' : 'w-auto h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform px-2`}
           >
@@ -63,6 +68,7 @@ const SocialLinks = () => {
           />
           <p className='text-primary text-sm font-semibold'>Cheaper & No Prepayment!</p>
         </button>
+        </a>
       </div>
     </div>
   );
