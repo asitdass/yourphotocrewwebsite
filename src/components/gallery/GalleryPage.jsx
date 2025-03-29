@@ -61,6 +61,7 @@ const GalleryPage = () => {
     }
   ];
   
+  
   // Sample images data (same as before)
   const images = [
     {
