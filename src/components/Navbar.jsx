@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
             <img
-              src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/logo.jpg"
+              src="assets/logo.jpg"
               alt="YourPhotoCrew"
               className="h-12 w-12"
             />

@@ -54,7 +54,7 @@ const ScheduledShoot = () => {
             className="w-full h-full object-cover"
           >
             <source
-              src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/services/cameralovesection/reel-video.mp4"
+              src="assets/services/cameralovesection/reel-video.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

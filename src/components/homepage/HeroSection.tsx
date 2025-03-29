@@ -9,33 +9,33 @@ const HeroSection = () => {
   const scrollInterval = useRef(null);
 
   const slides = [
-    { image: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/hero/image-1.jpg", title: "Capture Moments, Not Budgets📸" },
-    { image: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/hero/image-2.jpg", title: "Shoot At A Price Of A Coffee Date🤩" },
-    { image: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/hero/image-3.jpg", title: "Better Than Your Buddy's Phone😎" },
-    { image: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/hero/image-4.jpg", title: "Come Get 'THAT PIC'✨" },
+    { image: "assets/homepage/hero/image-1.jpg", title: "Capture Moments, Not Budgets📸" },
+    { image: "assets/homepage/hero/image-2.jpg", title: "Shoot At A Price Of A Coffee Date🤩" },
+    { image: "assets/homepage/hero/image-3.jpg", title: "Better Than Your Buddy's Phone😎" },
+    { image: "assets/homepage/hero/image-4.jpg", title: "Come Get 'THAT PIC'✨" },
   ];
 
   const images = [
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-1.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-1.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-1.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-1.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-2.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-2.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-2.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-2.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-3.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-3.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-3.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-3.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-4.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-4.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-4.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-4.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-5.JPG",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-5.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-5.jpg",
-    "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-5.jpg",
+    "assets/gallery/male/male-1.JPG",
+    "assets/gallery/female/female-1.jpg",
+    "assets/gallery/couplesection/couple-1.JPG",
+    "assets/gallery/businessprofile/businessprofile-1.jpg",
+    "assets/gallery/male/male-2.jpg",
+    "assets/gallery/female/female-2.jpg",
+    "assets/gallery/couplesection/couple-2.jpg",
+    "assets/gallery/businessprofile/businessprofile-2.jpg",
+    "assets/gallery/male/male-3.jpg",
+    "assets/gallery/female/female-3.jpg",
+    "assets/gallery/couplesection/couple-3.JPG",
+    "assets/gallery/businessprofile/businessprofile-3.JPG",
+    "assets/gallery/male/male-4.jpg",
+    "assets/gallery/female/female-4.JPG",
+    "assets/gallery/couplesection/couple-4.jpg",
+    "assets/gallery/businessprofile/businessprofile-4.JPG",
+    "assets/gallery/male/male-5.JPG",
+    "assets/gallery/female/female-5.jpg",
+    "assets/gallery/couplesection/couple-5.jpg",
+    "assets/gallery/businessprofile/businessprofile-5.jpg",
   ];
 
   // Duplicate images to create seamless loop
@@ -115,8 +115,8 @@ const HeroSection = () => {
           <div className="mt-8">
             <h2 className="text-xl text-tertiary mb-4">Find us on:</h2>
             <div className="flex space-x-6">
-              <img src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/paytm-insider.svg" alt="Paytm Insider" className="w-32 h-auto bg-tertiary p-2 rounded" />
-              <img src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/bookmyshow-logo.svg" alt="BookMyShow" className="w-32 h-auto bg-tertiary p-2 rounded" />
+              <img src="assets/homepage/paytm-insider.svg" alt="Paytm Insider" className="w-32 h-auto bg-tertiary p-2 rounded" />
+              <img src="assets/homepage/bookmyshow-logo.svg" alt="BookMyShow" className="w-32 h-auto bg-tertiary p-2 rounded" />
             </div>
           </div>
         </motion.div>

@@ -66,7 +66,7 @@ const GalleryPage = () => {
   const images = [
     {
       id: '1',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-1.jpg',
+      url: 'assets/gallery/couplesection/couple-1.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -74,7 +74,7 @@ const GalleryPage = () => {
     },
     {
       id: '2',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-2.jpg',
+      url: 'assets/gallery/couplesection/couple-2.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -82,7 +82,7 @@ const GalleryPage = () => {
     },
     {
       id: '3',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-3.jpg',
+      url: 'assets/gallery/couplesection/couple-3.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -90,7 +90,7 @@ const GalleryPage = () => {
     },
     {
       id: '4',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-4.jpg',
+      url: 'assets/gallery/couplesection/couple-4.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -98,7 +98,7 @@ const GalleryPage = () => {
     },
     {
       id: '5',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-5.jpg',
+      url: 'assets/gallery/couplesection/couple-5.jpg',
       title: 'Couple Section',    
       category: 'scheduled',
       subcategory: 'couple',
@@ -106,7 +106,7 @@ const GalleryPage = () => {
     },
     {
       id: '6',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-6.jpg',
+      url: 'assets/gallery/couplesection/couple-6.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -114,7 +114,7 @@ const GalleryPage = () => {
     },
     {
       id: '7',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/couplesection/couple-7.jpg',
+      url: 'assets/gallery/couplesection/couple-7.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -122,7 +122,7 @@ const GalleryPage = () => {
     },
     {
       id: '8',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-1.jpg',
+      url: 'assets/gallery/female/female-1.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -130,7 +130,7 @@ const GalleryPage = () => {
     },
     {
       id: '9',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-2.jpg',
+      url: 'assets/gallery/female/female-2.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -138,7 +138,7 @@ const GalleryPage = () => {
     },
     {
       id: '10',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-3.jpg',
+      url: 'assets/gallery/female/female-3.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -146,7 +146,7 @@ const GalleryPage = () => {
     },
     {
       id: '11',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-4.jpg',
+      url: 'assets/gallery/female/female-4.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -154,7 +154,7 @@ const GalleryPage = () => {
     },
     {
       id: '12',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-5.jpg',
+      url: 'assets/gallery/female/female-5.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -162,7 +162,7 @@ const GalleryPage = () => {
     },
     {
       id: '13',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-6.jpg',
+      url: 'assets/gallery/female/female-6.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -170,7 +170,7 @@ const GalleryPage = () => {
     },
     {
       id: '14',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/female/female-7.jpg',
+      url: 'assets/gallery/female/female-7.jpg',
       title: 'Female Section',
       category: 'scheduled',
       subcategory: 'female',
@@ -178,7 +178,7 @@ const GalleryPage = () => {
     },
     {
       id: '15',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-1.jpg',
+      url: 'assets/gallery/male/male-1.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -186,7 +186,7 @@ const GalleryPage = () => {
     },
     {
       id: '16',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-2.jpg',
+      url: 'assets/gallery/male/male-2.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -194,7 +194,7 @@ const GalleryPage = () => {
     },
     {
       id: '17',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-3.jpg',
+      url: 'assets/gallery/male/male-3.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -202,7 +202,7 @@ const GalleryPage = () => {
     },
     {
       id: '18',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-4.jpg',
+      url: 'assets/gallery/male/male-4.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -210,7 +210,7 @@ const GalleryPage = () => {
     },
     {
       id: '19',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-5.jpg',
+      url: 'assets/gallery/male/male-5.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -218,7 +218,7 @@ const GalleryPage = () => {
     },
     {
       id: '20',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-6.jpg',
+      url: 'assets/gallery/male/male-6.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -226,7 +226,7 @@ const GalleryPage = () => {
     },
     {
       id: '21',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/male/male-7.jpg',
+      url: 'assets/gallery/male/male-7.jpg',
       title: 'Male Section',
       category: 'scheduled',
       subcategory: 'male',
@@ -234,7 +234,7 @@ const GalleryPage = () => {
     },
     {
       id: '22',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-1.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-1.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',
@@ -242,7 +242,7 @@ const GalleryPage = () => {
     },
     {
       id: '23',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-2.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-2.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',
@@ -250,7 +250,7 @@ const GalleryPage = () => {
     },
     {
       id: '24',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-3.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-3.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',
@@ -258,7 +258,7 @@ const GalleryPage = () => {
     },
     {
       id: '25',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-4.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-4.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled', 
       subcategory: 'portfolio',
@@ -266,7 +266,7 @@ const GalleryPage = () => {
     },
     {
       id: '26',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-5.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-5.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',
@@ -274,7 +274,7 @@ const GalleryPage = () => {
     },
     {
       id: '27',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-6.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-6.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',
@@ -282,7 +282,7 @@ const GalleryPage = () => {
     },
     {
       id: '28',
-      url: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/gallery/businessprofile/businessprofile-7.jpg',
+      url: 'assets/gallery/businessprofile/businessprofile-7.jpg',
       title: 'Business Profile Shots',
       category: 'scheduled',
       subcategory: 'portfolio',

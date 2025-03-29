@@ -37,7 +37,7 @@ const ServicesSection: React.FC = () => {
       title: 'Scheduled Shoot',
       icon: <Users className="w-6 h-6" />,
       description: 'Pre-booked, theme-based shoot at partnered locations for high-quality, personalized portraits.',
-      image: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/scheduled-shoot.mp4',
+      image: 'assets/homepage/scheduled-shoot.mp4',
       bullets: [
         "Feeling awkward posing in public or struggling to get natural, candid shots in private?",
         "Prefer capturing intimate moments in a private setting—whether for an anniversary, golden/silver jubilee, or a beautiful relationship reveal?",
@@ -54,7 +54,7 @@ const ServicesSection: React.FC = () => {
       title: 'Goa edition - Scheduled Shoot',
       icon: <Waves className="w-6 h-6" />,
       description: 'Capture your Goa memories with high-quality, candid shots so that you can finally do what you came to do… travel',
-      image: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/goa.mp4',
+      image: 'assets/homepage/goa.mp4',
       bullets: [
        "Out with or without your friends or on your honeymoon? This trip is special. One picture might be all that lasts—let’s make it the one we take!",
        "Perfect Goa look—beachwear, resort outfits, boho styles—but no great pictures to show for it?",
@@ -66,7 +66,7 @@ const ServicesSection: React.FC = () => {
       title: 'College Fests',
       icon: <Image className="w-6 h-6" />,
       description: 'On-demand photography at college fests — quick, high-quality shots at half the price.',
-      image: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/collegeshoot.mp4',
+      image: 'assets/homepage/collegeshoot.mp4',
       bullets: [
         "Ever been lost in a memory lane just scrolling your gallery, 1 pic after the other and you’ll get why those Harry Potter portraits moved for a reason.Coz it’s never just a still.. its years of fun college memories surrounding it & once you look back… don’t they all come rushing in? If this was your Hogwarts, we'll come click where a frame of your group should ideally belong..at your hangout spot.",
         "Curious about the process? Drop by, check the quality, and if it’s not for you, you’re even free to leave mid-shoot.",
@@ -80,7 +80,7 @@ const ServicesSection: React.FC = () => {
       title: 'Family Functions',
       icon: <Camera className="w-6 h-6" />,
       description: 'Personalized photography at family events — focused on you, not just the event.',
-      image: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/family.jpg',
+      image: 'assets/homepage/family.jpg',
       bullets: [
         "At weddings and family events, the photographer’s job is to cover the event—not you. They’ll snap a quick shot, mid-bite or mid-adjustment, and move on. It’s about quantity, not capturing you at your best.",
         "We’re different. We’re not there for the event — we’re there for you. We’ll focus on well-dressed guests, spending dedicated time and effort to get the perfect shot you’re looking for. It’s not about quick snaps — it’s about giving you the kind of personalized attention that regular event photography can’t.",

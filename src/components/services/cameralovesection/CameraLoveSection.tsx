@@ -6,19 +6,19 @@ import PhotoGrid from "../hero/PhotoGrid";
 export const CameraLoveSection = () => {
   const benefits = [
     {
-      icon: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/services/cameralovesection/arrow.svg",
+      icon: "assets/services/cameralovesection/arrow.svg",
       title: "Stand Out Online",
       description:
         "First impressions are digital. Whether it's for dating apps or LinkedIn, great photos open doors.",
     },
     {
-      icon: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/services/cameralovesection/arrow.svg",
+      icon: "assets/services/cameralovesection/arrow.svg",
       title: "Celebrate You",
       description:
         "New job, big milestone, or just feeling good? Capture it and own your story.",
     },
     {
-      icon: "https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/services/cameralovesection/arrow.svg",
+      icon: "assets/services/cameralovesection/arrow.svg",
       title: "Create Lasting Memories",
       description:
         "Imagine showing your grandkids how amazing you looked in your prime!",
