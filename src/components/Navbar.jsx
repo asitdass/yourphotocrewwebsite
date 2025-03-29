@@ -25,12 +25,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navItems = [{ name: "Home", route: "/" }, { name: "Gallery", route: "/gallery" }, { name: "Scheduled Services", route: "/services" }, { name: "Contact", route: "/contact" }];
+  const navItems = [{ name: "Home", route: "/" }, { name: "Scheduled Services", route: "/services" }, { name: "Gallery", route: "/gallery" }];
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-primary shadow-lg py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-primary shadow-lg py-2" : "bg-primary py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">

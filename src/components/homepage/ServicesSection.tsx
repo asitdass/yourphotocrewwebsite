@@ -37,7 +37,7 @@ const ServicesSection: React.FC = () => {
       title: 'Scheduled Shoot',
       icon: <Users className="w-6 h-6" />,
       description: 'Pre-booked, theme-based shoot at partnered locations for high-quality, personalized portraits.',
-      image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
+      image: '/assets/homepage/scheduled-shoot.mp4',
       bullets: [
         "Feeling awkward posing in public or struggling to get natural, candid shots in private?",
         "Prefer capturing intimate moments in a private setting—whether for an anniversary, golden/silver jubilee, or a beautiful relationship reveal?",
@@ -165,7 +165,7 @@ const ServicesSection: React.FC = () => {
                     autoPlay
                     loop
                     muted
-                    className="w-full h-80 object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full transition-transform duration-500 hover:scale-105 overflow-hidden aspect-square object-cover"
                   />
                 ) : (
                 <img
@@ -196,14 +196,14 @@ const ServicesSection: React.FC = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="text-center">
+          {/* <motion.div variants={itemVariants} className="text-center">
             <a
               href="#contact"
               className="inline-block bg-primary text-tertiary px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               Explore All Services
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

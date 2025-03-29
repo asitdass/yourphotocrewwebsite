@@ -10,7 +10,7 @@ const PhotoGrid = () => {
                     <div className="w-3/5 max-md:w-full max-md:ml-0">
                         <img
                             loading="lazy"
-                            srcSet="assets/services/hero/image-8.jpg"
+                            srcSet="assets/gallery/male/male-1.jpg"
                             className="aspect-[1.42] object-cover w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
                             alt="Photography portfolio sample 1"
                         />
@@ -18,7 +18,7 @@ const PhotoGrid = () => {
                     <div className="w-2/5 ml-5 max-md:w-full max-md:ml-0">
                         <img
                             loading="lazy"
-                            srcSet="assets/services/hero/image-9.jpg"
+                            srcSet="assets/gallery/couplesection/couple-1.jpg"
                             className="aspect-[0.94] object-cover w-[172px] shrink-0 max-w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay"
                             alt="Photography portfolio sample 2"
                         />

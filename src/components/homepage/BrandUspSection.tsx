@@ -44,7 +44,7 @@ const BrandUspSection: React.FC = () => {
     {
       icon: <DollarSign className="w-12 h-12 text-secondary" />,
       title: "Affordable Pricing",
-      description: "",
+      description: "Yes you read it right. Our pricing is missing a few zeroes!",
     },
     {
       icon: <CheckCircle className="w-12 h-12 text-secondary" />,

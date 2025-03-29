@@ -1,23 +1,25 @@
 "use client";
 
+import { redirect } from "next/dist/server/api-utils";
 import { ActionButton } from "./ActionButton";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const steps = [
   {
     number: 1,
     title: "Book Your Slot",
-    content: "Choose between online platforms (BookMyShow, PayTM, Insider) with full prepayment or direct booking via WhatsApp (Rs 300 pre-booking, adjusted later).",
+    content: "Choose between online platforms (BookMyShow, PayTM, Insider) with full prepayment or direct booking at cheaper rates via WhatsApp with just Rs 300 pre-booking (adjusted later).",
   },
   {
     number: 2,
     title: "Arrive On Time",
-    content: "Reach the venue on your scheduled date; our team and venue staff will assist you throughout the shoot.",
+    content: "From your smile/laugh while you get clicked to your wardrobe to planning themes everything will be our responsibility. All you need to do is show up!",
   },
   {
     number: 3,
-    title: "Enjoy a Hassle-Free Experience",
-    content: "We handle themes, wardrobe changes (on-site facilities), and candid moments—just bring your smile!",
+    title: "Seamless Venue Experience",
+    content: "All of our partnered themes are are equipped with wardrobe changing facilities & within walking distances. So, you don’t have to worry about transportation costs.",
   },
   {
     number: 4,
@@ -33,7 +35,11 @@ const steps = [
 
 export const GettingStarted = () => {
   const handleBookClick = () => {
-    console.log("Booking initiated");
+    return (
+      <Link href="/services">
+        <a>Book Now</a>
+      </Link>
+    );
   };
 
   return (
@@ -119,7 +125,7 @@ export const GettingStarted = () => {
         >
           <ActionButton 
             text="Book Your Shoot Now" 
-            onClick={handleBookClick}
+            onClick={() => window.location.href = '/services'}
             className="px-8 py-3 text-lg font-medium hover:scale-105 transition-transform bg-white text-black hover:bg-white/90"
           />
         </motion.div>

@@ -80,7 +80,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="bg-primary relative h-screen flex flex-col md:flex-row items-center px-6 md:px-16 overflow-hidden">
+    <section id="home" className="bg-primary relative h-screen flex flex-col md:flex-row items-center px-6 md:px-16 overflow-hidden mt-20 md:mt-0 lg:mt-0">
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center h-full text-left">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>

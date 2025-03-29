@@ -47,7 +47,7 @@ export const ImageGrid: React.FC = () => {
         </div>
         <div className="gallery-image-wrapper col-span-1">
           <GalleryImage
-            src="assets/services/gallerysection/imagegrid/image-5.jpg"
+            src="assets/gallery/couplesection/couple-5.jpg"
             className="gallery-image rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </div>

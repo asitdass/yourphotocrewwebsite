@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import { Great_Vibes } from 'next/font/google';
+import { Dancing_Script } from "next/font/google";
 
-const greatVibes = Great_Vibes({
+const dancingScript = Dancing_Script({
   subsets: ['latin'],
-  weight: '400', // Great Vibes only has one weight (400)
+  weight: '400', 
 });
 
 const TestimonialsSection: React.FC = () => {
@@ -40,28 +40,28 @@ const TestimonialsSection: React.FC = () => {
 
   const testimonials = [
     {
-      text: "I was hesitant at first, but the team made me feel so comfortable. The photos turned out amazing and really captured my personality. I've already booked another session!",
-      name: "Ananya Sharma",
-      role: "Marketing Professional",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      text: "I had an amazing experience during my recent photo shoot! The photographer and the team was incredibly professional, making me feel comfortable and confident throughout the session. They had a fantastic eye for detail and captured beautiful moments that truly reflect my personality. The turnaround time for the photos was quick, and the final images exceeded my expectations. I highly recommend this service to anyone looking to capture special memories. I can't wait to book another shoot!",
+      name: "Mohit Raj Pal",
+      role: "",
+      image: "",
     },
     {
-      text: "As someone who's always been camera shy, I was amazed at how YourPhotoCrew made me look so natural in the photos. The wardrobe options were fantastic, and the price was unbeatable!",
-      name: "Rajiv Mehta",
-      role: "Software Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      text: "These guys were doing street photography content & they approached me on the road photoshoot happened...the shots were breathtaking. If you're looking for creative ideas, this is the right place to find a photographer near me who can deliver stunning results.",
+      name: "Sneha Biradarpatil",
+      role: "",
+      image: "",
     },
     {
-      text: "I needed professional photos for my LinkedIn profile, and YourPhotoCrew delivered beyond my expectations. The team was punctual, professional, and the photos helped me land my dream job!",
-      name: "Priya Patel",
-      role: "HR Consultant",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      text: "Awesome one! They have a wide collection of dress both upper and lower in varying sizes and suggest the best for us based on our body psyche and theme. The person always tells us the best poses and keep on entertaining us and the photographer clicks the best of the candids! Overall a great experience, and would recommend anyone to jump in!",
+      name: "Abhishek Ray",
+      role: "",
+      image: "",
     },
     {
-      text: "The cafe photoshoot was such a fun experience! The photographers knew exactly how to capture the best angles and lighting. My Instagram has never looked better!",
-      name: "Arjun Singh",
-      role: "Content Creator",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      text: "I had an amazing experience working with Them! Their professionalism, creativity, and attention to detail truly set them apart. They made the entire process comfortable and fun, capturing stunning shots that exceeded my expectations. The final images were beautifully edited and delivered on time. If you're looking for a talented photographer who brings out the best in every moment, I highly recommend.",
+      name: "Roshan Choudhary",
+      role: "",
+      image: "",
     },
   ];
 
@@ -103,13 +103,13 @@ const TestimonialsSection: React.FC = () => {
               <Quote className="w-16 h-16 text-secondary opacity-20 absolute top-8 left-8" />
               <div className="relative z-10">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                  <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
+                  {/* <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                     <img
                       src={testimonials[currentTestimonial].image}
                       alt={testimonials[currentTestimonial].name}
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </div> */}
                   <div className="flex-1">
                     <p className="text-lg md:text-xl text-gray-700 italic mb-6">
                       "{testimonials[currentTestimonial].text}"
@@ -157,7 +157,8 @@ const TestimonialsSection: React.FC = () => {
 
           <motion.div variants={itemVariants} className="text-center mt-12">
             <a
-              href="#contact"
+              href="https://tinyurl.com/mttep9sm"
+              target="_blank"
               className="inline-block bg-secondary text-tertiary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               Read Google Reviews
@@ -169,7 +170,7 @@ const TestimonialsSection: React.FC = () => {
           className="text-center mt-12"
         >
           <div className="bg-tertiary rounded-lg shadow-lg p-6 md:p-10 mb-8">
-            <p className={`${greatVibes.className} text-lg md:text-xl text-gray-700 italic mb-6`}>“We don't use your photos for marketing without prior consent. We here at yourphotocrew respect your privacy”</p>
+            <p className={`${dancingScript.className} text-lg md:text-xl text-gray-700 italic mb-6`}>We don't use your photos for marketing without prior consent. We here at yourphotocrew respect your privacy</p>
           </div>
         </motion.div>
       </div>

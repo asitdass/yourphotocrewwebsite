@@ -148,15 +148,16 @@ const BtsSection: React.FC = () => {
                     ? 'h-full w-full flex items-center justify-center'
                     : 'aspect-[9/16] bg-gray-900'
                 }`}>
-                  <iframe
-                    className={`w-full h-full rounded-2xl ${
-                      isVideoExpanded ? 'max-w-[calc(100vh*9/16)]' : ''
-                    }`}
-                    src="/assets/services/cameralovesection/reel-video.mp4"
-                    title="Behind the scenes at YourPhotoCrew"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <video
+  className={`w-full h-full rounded-2xl ${isVideoExpanded ? 'max-w-[calc(100vh*9/16)]' : ''}`}
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/assets/services/cameralovesection/reel-video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
                 </div>
                 <button
                   onClick={() => setIsVideoExpanded(!isVideoExpanded)}

@@ -56,7 +56,7 @@ const AboutSection: React.FC = () => {
 
           <div className="flex md:flex-col gap-12 items-center mb-16">
             <motion.div variants={itemVariants} className="order-2 md:order-1">
-              <div className="flex align-center gap-6">
+              <div className="flex align-center gap-6 sm:flex-row flex-col">
                 {[
                   {
                     icon: <ShieldMinus className="w-10 h-10 text-secondary" />,
