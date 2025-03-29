@@ -155,7 +155,7 @@ const BtsSection: React.FC = () => {
   loop
   playsInline
 >
-  <source src="/assets/services/cameralovesection/reel-video.mp4" type="video/mp4" />
+  <source src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/services/cameralovesection/reel-video.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
                 </div>

@@ -36,7 +36,7 @@ const SocialLinks = () => {
           className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative flex items-center justify-center bg-tertiary rounded-md shadow-lg hover:scale-110 transition-transform`}
           >
           <img
-            src="/assets/homepage/paytm-insider.svg" // Replace with Paytm Insider logo URL
+            src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/paytm-insider.svg" // Replace with Paytm Insider logo URL
             alt="Paytm Insider Logo"
             className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
           />
@@ -49,7 +49,7 @@ const SocialLinks = () => {
             className={`${isSticky ? 'w-32 h-16' : 'w-40 h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform`}
           >
             <img
-              src="/assets/homepage/bookmyshow-logo.svg" // Replace with BookMyShow logo URL
+              src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/bookmyshow-logo.svg" // Replace with BookMyShow logo URL
               alt="BookMyShow Logo"
               className={`${isSticky ? 'w-20' : 'w-28'} group-hover:scale-110 transition-transform`}
             />
@@ -62,7 +62,7 @@ const SocialLinks = () => {
           className={`${isSticky ? 'w-auto h-16' : 'w-auto h-20'} group relative bg-tertiary flex items-center justify-center rounded-md shadow-lg hover:scale-110 transition-transform px-2`}
           >
           <img
-            src="/assets/homepage/whatsapp.svg" // Replace with WhatsApp logo URL
+            src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/whatsapp.svg" // Replace with WhatsApp logo URL
             alt="WhatsApp Logo"
             className={`${isSticky ? 'w-10' : 'w-14'} group-hover:scale-110 transition-transform`}
           />

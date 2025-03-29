@@ -15,7 +15,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img
-                src="/assets/logo.jpg"
+                src="https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/logo.jpg"
                 alt="YourPhotoCrew"
                 className="h-12 w-12"
               />

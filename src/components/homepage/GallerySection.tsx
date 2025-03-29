@@ -35,18 +35,18 @@ const GallerySection: React.FC = () => {
 
   const beforeAfterPairs = [
     {
-      before: '/assets/homepage/beforeafter/AKR05513.jpg',
-      after: '/assets/homepage/beforeafter/AKR05513-2.jpg',
+      before: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05513.jpg',
+      after: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05513-2.jpg',
       category: 'Portrait',
     },
     {
-      before: '/assets/homepage/beforeafter/AKR05549.jpg',
-      after: '/assets/homepage/beforeafter/AKR05549-2.jpg',
+      before: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05549.jpg',
+      after: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05549-2.jpg',
       category: 'Fashion',
     },
     {
-      before: '/assets/homepage/beforeafter/AKR05416.jpg',
-      after: '/assets/homepage/beforeafter/AKR05416-2.jpg',
+      before: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05416.jpg',
+      after: 'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/homepage/beforeafter/AKR05416-2.jpg',
       category: 'Professional',
     },
   ];

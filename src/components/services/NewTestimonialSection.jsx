@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const NewTestimonialsSection = () => {
   const reviewPhotos = [
-    '/assets/reviews/review-1.jpg',
-    '/assets/reviews/review-2.jpg',
-    '/assets/reviews/review-3.jpg',
-    '/assets/reviews/review-4.jpg',
-    '/assets/reviews/review-5.jpg',
-    '/assets/reviews/review-6.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-1.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-2.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-3.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-4.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-5.jpg',
+    'https://yourphotocrewwebsite-2kjl7d01v-asitdass-projects.vercel.app/assets/reviews/review-6.jpg',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
