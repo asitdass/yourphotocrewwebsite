@@ -16,25 +16,25 @@ const HeroSection = () => {
   ];
 
   const images = [
-    "assets/gallery/male/male-1.JPG",
+    "assets/gallery/male/male-1.jpg",
     "assets/gallery/female/female-1.jpg",
-    "assets/gallery/couplesection/couple-1.JPG",
+    "assets/gallery/couple/couple-1.jpg",
     "assets/gallery/businessprofile/businessprofile-1.jpg",
     "assets/gallery/male/male-2.jpg",
     "assets/gallery/female/female-2.jpg",
-    "assets/gallery/couplesection/couple-2.jpg",
+    "assets/gallery/couple/couple-2.jpg",
     "assets/gallery/businessprofile/businessprofile-2.jpg",
     "assets/gallery/male/male-3.jpg",
     "assets/gallery/female/female-3.jpg",
-    "assets/gallery/couplesection/couple-3.JPG",
+    "assets/gallery/couple/couple-3.JPG",
     "assets/gallery/businessprofile/businessprofile-3.JPG",
     "assets/gallery/male/male-4.jpg",
     "assets/gallery/female/female-4.JPG",
-    "assets/gallery/couplesection/couple-4.jpg",
-    "assets/gallery/businessprofile/businessprofile-4.JPG",
-    "assets/gallery/male/male-5.JPG",
+    "assets/gallery/couple/couple-4.jpg",
+    "assets/gallery/businessprofile/businessprofile-4.jpg",
+    "assets/gallery/male/male-5.jpg",
     "assets/gallery/female/female-5.jpg",
-    "assets/gallery/couplesection/couple-5.jpg",
+    "assets/gallery/couple/couple-5.jpg",
     "assets/gallery/businessprofile/businessprofile-5.jpg",
   ];
 

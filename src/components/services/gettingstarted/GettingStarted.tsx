@@ -48,7 +48,7 @@ export const GettingStarted = () => {
       <div className="absolute inset-0 z-0">
         <img
           loading="lazy"
-          src="assets/services/gettingstarted/image-7.png"
+          src="assets/services/gettingstarted/image-7.jpg"
           className="w-full h-full object-cover object-center"
           alt="Photoshoot background"
         />
