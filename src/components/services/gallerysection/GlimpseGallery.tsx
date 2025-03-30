@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const GlimpseGallery: React.FC = () => {
   const images = [
-    "assets/gallery/male/male-1.JPG",
+    "assets/gallery/male/male-1.jpg",
     "assets/gallery/female/female-1.jpg",
     "assets/gallery/couple/couple-1.jpg",
     "assets/gallery/businessprofile/businessprofile-1.jpg",

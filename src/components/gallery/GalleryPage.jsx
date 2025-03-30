@@ -66,7 +66,7 @@ const GalleryPage = () => {
   const images = [
     {
       id: '1',
-      url: 'assets/gallery/couplesection/couple-1.jpg',
+      url: 'assets/gallery/couple/couple-1.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -74,7 +74,7 @@ const GalleryPage = () => {
     },
     {
       id: '2',
-      url: 'assets/gallery/couplesection/couple-2.jpg',
+      url: 'assets/gallery/couple/couple-2.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -82,7 +82,7 @@ const GalleryPage = () => {
     },
     {
       id: '3',
-      url: 'assets/gallery/couplesection/couple-3.jpg',
+      url: 'assets/gallery/couple/couple-3.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -90,7 +90,7 @@ const GalleryPage = () => {
     },
     {
       id: '4',
-      url: 'assets/gallery/couplesection/couple-4.jpg',
+      url: 'assets/gallery/couple/couple-4.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -98,7 +98,7 @@ const GalleryPage = () => {
     },
     {
       id: '5',
-      url: 'assets/gallery/couplesection/couple-5.jpg',
+      url: 'assets/gallery/couple/couple-5.jpg',
       title: 'Couple Section',    
       category: 'scheduled',
       subcategory: 'couple',
@@ -106,7 +106,7 @@ const GalleryPage = () => {
     },
     {
       id: '6',
-      url: 'assets/gallery/couplesection/couple-6.jpg',
+      url: 'assets/gallery/couple/couple-6.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
@@ -114,7 +114,7 @@ const GalleryPage = () => {
     },
     {
       id: '7',
-      url: 'assets/gallery/couplesection/couple-7.jpg',
+      url: 'assets/gallery/couple/couple-7.jpg',
       title: 'Couple Section',
       category: 'scheduled',
       subcategory: 'couple',
