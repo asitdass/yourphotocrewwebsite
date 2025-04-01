@@ -48,68 +48,68 @@ const OffersSection: React.FC = () => {
   // Sample offers with status and dates
   const allOffers = [
     {
-      title: 'Weekday Special',
-      description: 'Book any photoshoot on weekdays and get 20% off on the second theme.',
-      code: 'WEEKDAY20',
+      title: 'Pre-booking Discount',
+      description: 'Get 20% off on pre-booking.',
+      code: 'PREBOOK20',
       startDate: '2025-01-01',
-      endDate: '2025-01-10',
+      endDate: '2025-07-10',
       status: 'active',
       image: 'https://images.unsplash.com/photo-1551854716-8b811be39e7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
     },
-    {
-      title: 'Group Discount',
-      description: 'Bring 3 friends and get 15% off on the total package price.',
-      code: 'GROUP15',
-      startDate: '2025-01-01',
-      endDate: '2025-09-13',
-      status: 'active',
-      image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-    },
-    {
-      title: 'First-Time Offer',
-      description: 'First-time customers get a free digital photo frame with their package.',
-      code: 'FIRST10',
-      startDate: '2025-01-01',
-      endDate: '2025-11-14',
-      status: 'active',
-      image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80',
-    },
-    {
-      title: 'Seasonal Discount',
-      description: 'Monsoon special: 25% off on all outdoor photoshoots.',
-      code: 'MONSOON25',
-      startDate: '2025-06-01',
-      endDate: '2025-09-30',
-      status: 'future',
-      image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    },
-    {
-      title: 'Valentine Special',
-      description: 'Couple photoshoots at 30% discount for Valentine\'s week.',
-      code: 'LOVE30',
-      startDate: '2025-02-07',
-      endDate: '2025-02-14',
-      status: 'future',
-      image: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    },
-    {
-      title: 'Holiday Season',
-      description: 'Family portraits with 20% discount during the holiday season.',
-      code: 'HOLIDAY20',
-      startDate: '2024-12-01',
-      endDate: '2024-12-31',
-      status: 'past',
-      image: 'https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    },
-    {
-      title: 'Diwali Offer',
-      description: 'Festival special: Book one theme, get one free.',
-      code: 'DIWALI2FOR1',
-      startDate: '2024-10-15',
-      endDate: '2024-11-15',
-      status: 'past',
-      image: 'https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
-    },
+    // {
+    //   title: 'Group Discount',
+    //   description: 'Bring 3 friends and get 15% off on the total package price.',
+    //   code: 'GROUP15',
+    //   startDate: '2025-01-01',
+    //   endDate: '2025-09-13',
+    //   status: 'active',
+    //   image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
+    // },
+    // {
+    //   title: 'First-Time Offer',
+    //   description: 'First-time customers get a free digital photo frame with their package.',
+    //   code: 'FIRST10',
+    //   startDate: '2025-01-01',
+    //   endDate: '2025-11-14',
+    //   status: 'active',
+    //   image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80',
+    // },
+    // {
+    //   title: 'Seasonal Discount',
+    //   description: 'Monsoon special: 25% off on all outdoor photoshoots.',
+    //   code: 'MONSOON25',
+    //   startDate: '2025-06-01',
+    //   endDate: '2025-09-30',
+    //   status: 'future',
+    //   image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    // },
+    // {
+    //   title: 'Valentine Special',
+    //   description: 'Couple photoshoots at 30% discount for Valentine\'s week.',
+    //   code: 'LOVE30',
+    //   startDate: '2025-02-07',
+    //   endDate: '2025-02-14',
+    //   status: 'future',
+    //   image: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    // },
+    // {
+    //   title: 'Holiday Season',
+    //   description: 'Family portraits with 20% discount during the holiday season.',
+    //   code: 'HOLIDAY20',
+    //   startDate: '2024-12-01',
+    //   endDate: '2024-12-31',
+    //   status: 'past',
+    //   image: 'https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    // },
+    // {
+    //   title: 'Diwali Offer',
+    //   description: 'Festival special: Book one theme, get one free.',
+    //   code: 'DIWALI2FOR1',
+    //   startDate: '2024-10-15',
+    //   endDate: '2024-11-15',
+    //   status: 'past',
+    //   image: 'https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+    // },
   ];
 
   // Filter and sort offers based on active status
@@ -188,7 +188,7 @@ const OffersSection: React.FC = () => {
             {sortedOffers.length > 0 ? (
               <div
                 ref={scrollContainerRef}
-                className="flex overflow-x-auto space-x-6 py-8 px-4 hide-scrollbar"
+                className="flex overflow-x-auto space-x-6 py-8 px-4 hide-scrollbar justify-evenly"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               >
                 {sortedOffers.map((offer, index) => (
