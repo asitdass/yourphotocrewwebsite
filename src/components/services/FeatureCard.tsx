@@ -12,15 +12,26 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <article className="flex-1 shrink basis-0 min-w-60">
-      <img
-        loading="lazy"
-        src={icon}
-        className="object-contain w-11 aspect-square"
-        alt=""
-      />
-      <h3 className="mt-1.5 text-xl font-bold">{title}</h3>
-      <p className="mt-1.5 text-base leading-6">{description}</p>
+    <article className="flex-1 min-w-[260px] max-w-[320px] p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 ease-in-out">
+      <div className="flex items-center gap-4">
+        <div className="p-3 bg-orange-100 rounded-lg">
+          <img
+            loading="lazy"
+            src={icon}
+            className="w-8 h-8 object-contain"
+            alt={title}
+          />
+        </div>
+        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+      </div>
+      <p className="mt-4 text-gray-600 leading-relaxed">
+        {description.split('\n').map((line, i) => (
+          <React.Fragment key={i}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
     </article>
   );
 };

@@ -26,7 +26,7 @@ export const CameraLoveSection = () => {
   ];
 
   return (
-    <article className="m-16 flex flex-col md:flex-row gap-10 justify-center items-center text-black p-10 rounded-[30px]">
+    <article className="mt-16 mb-16 flex flex-col md:flex-row gap-10 justify-center items-center text-black p-10 rounded-[30px]">
       {/* Left Side: Reel Video */}
       <div className="w-full md:w-[40%] max-md:order-1">
           <PhotoGrid />

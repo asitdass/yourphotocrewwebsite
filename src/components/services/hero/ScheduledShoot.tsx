@@ -18,7 +18,7 @@ const ScheduledShoot = () => {
 
 
   return (
-    <section className="m-16 p-16 bg-[rgba(248,242,235,1)] overflow-hidden px-[60px] pt-14 rounded-[30px] max-md:px-5">
+    <section className="mt-16 mb-16 p-16 bg-[rgba(248,242,235,1)] overflow-hidden px-[60px] pt-14 rounded-[30px] max-md:px-5">
       <div className="flex flex-col md:flex-row gap-10 max-md:items-stretch">
         {/* Left Side Content */}
         <div className="flex flex-col w-full md:w-[60%] max-md:order-2">

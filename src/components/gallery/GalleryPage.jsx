@@ -290,28 +290,56 @@ const GalleryPage = () => {
     }
   ];
 
-  useEffect(() => {
-    // Simulate loading
-    const timer = setTimeout(() => setIsLoading(false), 1000);
+  // Update the useEffect hook where shuffledImages is initialized
+// Update the useEffect hook where shuffledImages is initialized
+useEffect(() => {
+  const timer = setTimeout(() => setIsLoading(false), 1000);
+  
+  const initialShuffled = {};
+  categories.filter(c => c.id !== 'all').forEach(category => {
+    let categoryImages = images.filter(img => img.category === category.id);
     
-    // Initialize shuffled images
-    const initialShuffled = {};
-    categories.filter(c => c.id !== 'all').forEach(category => {
-      initialShuffled[category.id] = shuffleArray(images.filter(img => img.category === category.id));
-    });
-    setShuffledImages(initialShuffled);
-    
-    return () => clearTimeout(timer);
-  }, []);
-
-  const shuffleArray = (array) => {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    if (category.id === 'scheduled') {
+      // Get all business profile photos
+      const businessProfileImages = categoryImages.filter(img => img.subcategory === 'portfolio');
+      // Get all other photos
+      const otherImages = categoryImages.filter(img => img.subcategory !== 'portfolio');
+      
+      // Select one random business profile to be first
+      const firstImage = businessProfileImages.length > 0 
+        ? [businessProfileImages[Math.floor(Math.random() * businessProfileImages.length)]] 
+        : [];
+      
+      // Combine: 
+      // 1. The selected business profile photo
+      // 2. Shuffled remaining business profiles + all other photos
+      const remainingBusinessProfiles = businessProfileImages.filter(
+        img => !firstImage.some(first => first.id === img.id)
+      );
+      
+      categoryImages = [
+        ...firstImage,
+        ...shuffleArray([...remainingBusinessProfiles, ...otherImages])
+      ];
+    } else {
+      categoryImages = shuffleArray(categoryImages);
     }
-    return newArray;
-  };
+    
+    initialShuffled[category.id] = categoryImages;
+  });
+  
+  setShuffledImages(initialShuffled);
+  return () => clearTimeout(timer);
+}, []);
+
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
 
   const toggleCategory = (categoryId) => {
     setExpandedCategories(prev => 

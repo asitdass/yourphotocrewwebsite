@@ -192,7 +192,7 @@ const BtsSection: React.FC = () => {
                 />
               )}
               <motion.a
-                href="https://www.instagram.com/yourphotocrew"
+                href="https://www.instagram.com/reel/DGAvzPty6xi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-secondary text-tertiary p-4 rounded-xl text-center hover:bg-opacity-90 transition-all duration-300 mt-6"

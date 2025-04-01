@@ -26,8 +26,16 @@ const FAQItem = ({ item }: FAQItemProps) => {
         </span>
       </button>
       {isExpanded && (
-        <div className="px-5 pb-5 max-sm:px-4 max-sm:pb-4">
-          <p className="text-neutral-900 text-opacity-80" dangerouslySetInnerHTML={{ __html: item.answer }}></p>
+        <div className="px-5 pb-5 max-sm:px-4 max-sm:pb-4 text-neutral-900 text-opacity-80">
+          {Array.isArray(item.answer) ? (
+            <ul className="list-disc pl-5 space-y-2">
+              {item.answer.map((point, i) => (
+                <li key={i} className="leading-relaxed">{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{item.answer}</p>
+          )}
         </div>
       )}
     </article>

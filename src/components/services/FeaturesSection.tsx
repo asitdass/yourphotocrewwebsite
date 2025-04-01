@@ -2,14 +2,13 @@
 
 import React from "react";
 import { FeatureCard } from "./FeatureCard";
-import {ShieldCheck, MapPinHouse} from 'lucide-react';
 
 export const FeaturesSection = () => {
   const features = [
     {
       icon: "assets/services/features/pe.svg",
       title: "Personalized Experience",
-      description: "Only 2 people per photographer for focused attention NO BYSTANDERS",
+      description: "Only 2 people per photographer for focused attention\nNO BYSTANDERS",
     },
     {
       icon: "assets/services/features/pt.svg",
@@ -19,39 +18,42 @@ export const FeaturesSection = () => {
     {
       icon: "assets/services/features/vt.svg",
       title: "Variety of Partnered Venues",
-      description: "Themed shoots at gyms, cafés, pubs, restaurants, etc. all in walking distance and equipped with changing facilities",
+      description: "Themed shoots at gyms, cafés, pubs, restaurants, etc.\nAll in walking distance with changing facilities",
     },
     {
       icon: "assets/services/features/ap.svg",
       title: "Affordable Pricing",
-      description: "500/theme (weekdays),\n600/theme (weekends)",
+      description: "500/theme (weekdays)\n600/theme (weekends)",
     },
     {
       icon: "assets/services/features/wi.svg",
       title: "Wardrobe Included",
-      description:
-        "Thematic wardrobe provided for males (females can bring their own)",
+      description: "Thematic wardrobe provided for males\n(females can bring their own)",
     },
     {
       icon: "assets/services/features/qa.svg",
       title: "Quality Assurance",
-      description: "We don’t move to the next theme until YOU say there are at least 2 great clicks in any theme.",
+      description: "We don't move to next theme until YOU confirm\nat least 2 great clicks in current theme",
     },
   ];
 
   return (
-    <section className="m-16 overflow-hidden text-black">
-      <div className="p-12 w-full bg-orange-50 rounded-3xl max-md:px-5 max-md:max-w-full">
-        <header className="flex flex-wrap gap-10 items-start w-full max-md:max-w-full">
-          <h2 className="text-3xl font-extrabold w-[392px]">
-            What makes us stand out of the crowd?
-          </h2>
-          <p className="flex-1 shrink text-lg leading-8 basis-0 max-md:max-w-full">
-          Here’s why our scheduled shoot is for you!
-          </p>
+    <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto bg-orange-50 rounded-3xl p-12 md:p-16">
+        <header className="flex flex-col md:flex-row gap-8 md:gap-16 mb-12">
+          <div className="md:w-2/5">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+              What makes us stand out from the crowd?
+            </h2>
+          </div>
+          <div className="md:w-3/5">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              Here's why our scheduled shoot experience is perfect for you!
+            </p>
+          </div>
         </header>
 
-        <div className="flex flex-wrap gap-8 items-start mt-10 w-full max-md:max-w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

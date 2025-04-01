@@ -270,14 +270,14 @@ const OffersSection: React.FC = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="text-center mt-12">
+          {/* <motion.div variants={itemVariants} className="text-center mt-12">
             <a
               href="#services"
               className="inline-block bg-primary text-tertiary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
             >
               View All Offers
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
