@@ -101,7 +101,7 @@ const Navbar = () => {
             : "max-h-0 opacity-0 pointer-events-none"
         } overflow-hidden`}
       >
-        <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <div className="container mx-auto px-4 py-4 flex flex-col space-y-4 bg-secondary">
           {navItems.map((item) => {
             const route = item.name === "Home" ? "/" : `/${item.route.toLowerCase()}`; // Redirect to '/' for Home
             const isActive = router.pathname === route;
@@ -112,8 +112,8 @@ const Navbar = () => {
                 href={route}
                 className={`${
                   isActive
-                    ? "text-secondary"
-                    : "text-tertiary hover:text-secondary"
+                    ? "text-primary"
+                    : "text-tertiary hover:text-primary"
                 } font-medium transition-colors duration-300`}
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >

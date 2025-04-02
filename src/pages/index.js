@@ -27,7 +27,7 @@ const IndexPage = () => {
       <ServicesSection />
       {/* <GallerySection /> */}
       <AboutSection />
-      <GlimpseGallery />
+      {/* <GlimpseGallery /> */}
       <TestimonialsSection />
       {/* <ContactSection /> */}
       <Footer />
