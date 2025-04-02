@@ -8,7 +8,7 @@ export const FeaturesSection = () => {
     {
       icon: "assets/services/features/pe.svg",
       title: "Personalized Experience",
-      description: "Only 2 people per photographer for focused attention\nNO BYSTANDERS",
+      description: "Only 2 people per photographer for focused attention NO BYSTANDERS",
     },
     {
       icon: "assets/services/features/pt.svg",
@@ -18,28 +18,28 @@ export const FeaturesSection = () => {
     {
       icon: "assets/services/features/vt.svg",
       title: "Variety of Partnered Venues",
-      description: "Themed shoots at gyms, cafés, pubs, restaurants, etc.\nAll in walking distance with changing facilities",
+      description: "Themed shoots at gyms, cafés, pubs, restaurants, etc. All in walking distance with changing facilities",
     },
     {
       icon: "assets/services/features/ap.svg",
       title: "Affordable Pricing",
-      description: "500/theme (weekdays)\n600/theme (weekends)",
+      description: "1 Theme: ₹600/700 for weekday/end\n5 Theme package: ₹2500/3000 for weekday/weekend",
     },
     {
       icon: "assets/services/features/wi.svg",
       title: "Wardrobe Included",
-      description: "Thematic wardrobe provided for males\n(females can bring their own)",
+      description: "Thematic wardrobe provided for males (females can bring their own)",
     },
     {
       icon: "assets/services/features/qa.svg",
       title: "Quality Assurance",
-      description: "We don't move to next theme until YOU confirm\nat least 2 great clicks in current theme",
+      description: "We don't move to next theme until YOU confirm at least 2 great clicks in current theme",
     },
   ];
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto bg-orange-50 rounded-3xl p-12 md:p-16">
+      <div className="max-w-7xl mx-auto bg-quaternary rounded-3xl p-12 md:p-16">
         <header className="flex flex-col md:flex-row gap-8 md:gap-16 mb-12">
           <div className="md:w-2/5">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">

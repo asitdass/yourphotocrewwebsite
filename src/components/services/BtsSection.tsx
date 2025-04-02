@@ -50,7 +50,7 @@ const BtsSection: React.FC = () => {
   }, [doubts.length]);
 
   return (
-    <section className="py-20 bg-quaternary overflow-hidden">
+    <section className="py-20 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           ref={ref}

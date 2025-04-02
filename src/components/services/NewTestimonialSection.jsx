@@ -58,7 +58,7 @@ const NewTestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="testimonials" className="py-20 bg-quaternary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">

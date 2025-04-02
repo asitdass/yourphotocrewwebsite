@@ -1,83 +1,132 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const PhotoGrid = () => {
-    return (
-        <div className="self-stretch min-w-60 w-[435px] my-auto rounded-[150px] max-md:w-full max-md:rounded-2xl">
-            {/* First Row - Stack vertically on mobile */}
-            <div className="max-md:max-w-full max-md:flex max-md:flex-col">
-                <div className="gap-5 flex max-md:flex-col max-md:gap-3 max-md:items-stretch">
-                    <div className="w-3/5 max-md:w-full max-md:ml-0">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/gallery/male/male-1.jpg"
-                            className="aspect-[1.42] object-cover w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 1"
-                        />
-                    </div>
-                    <div className="w-2/5 ml-5 max-md:w-full max-md:ml-0 max-md:mt-3">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/gallery/couple/couple-1.jpg"
-                            className="aspect-[0.94] object-cover w-[172px] shrink-0 max-w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 2"
-                        />
-                    </div>
-                </div>
-            </div>
+  const [activeMobileImage, setActiveMobileImage] = useState(0);
 
-            {/* Second Row - Stack vertically on mobile */}
-            <div className="max-md:max-w-full mt-5 max-md:mt-3 max-md:flex max-md:flex-col">
-                <div className="gap-5 flex max-md:flex-col max-md:gap-3 max-md:items-stretch">
-                    <div className="w-2/5 max-md:w-full max-md:ml-0">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/services/hero/image-10.jpg"
-                            className="aspect-[1] object-cover w-[173px] shrink-0 max-w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2 max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 3"
-                        />
-                    </div>
-                    <div className="w-3/5 ml-5 max-md:w-full max-md:ml-0 max-md:mt-3">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/services/hero/image-11.jpg"
-                            className="aspect-[1.52] object-cover w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 4"
-                        />
-                    </div>
-                </div>
-            </div>
+  const mobileImages = [
+    { src: "assets/gallery/male/male-1.jpg", alt: "Male portrait", className: "w-full h-full" },
+    { src: "assets/gallery/couple/couple-1.jpg", alt: "Couple portrait", className: "w-1/2 h-1/2" },
+    { src: "assets/gallery/female/female-1.jpg", alt: "Female portrait", className: "w-1/3 h-1/3" },
+    { src: "assets/gallery/businessprofile/businessprofile-2.jpg", alt: "Business profile", className: "w-1/2 h-1/2" }
+  ];
 
-            {/* Third Row - Stack vertically on mobile */}
-            <div className="max-md:max-w-full mt-5 max-md:mt-3 max-md:flex max-md:flex-col">
-                <div className="gap-5 flex max-md:flex-col max-md:gap-3 max-md:items-stretch">
-                    <div className="w-2/5 max-md:w-full max-md:ml-0">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/services/hero/image-12.jpg"
-                            className="aspect-[1] object-cover w-[173px] shrink-0 max-w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 5"
-                        />
-                    </div>
-                    <div className="w-[30%] ml-5 max-md:w-full max-md:ml-0 max-md:mt-3">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/services/hero/image-13.jpg"
-                            className="aspect-[0.76] object-cover w-[131px] shrink-0 max-w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 6"
-                        />
-                    </div>
-                    <div className="w-[30%] ml-5 max-md:w-full max-md:ml-0 max-md:mt-3">
-                        <img
-                            loading="lazy"
-                            srcSet="assets/services/hero/image-14.jpg"
-                            className="aspect-[0.76] object-cover w-[131px] shrink-0 max-w-full grow rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2 max-md:w-full max-md:aspect-square max-md:rounded-xl"
-                            alt="Photography portfolio sample 7"
-                        />
-                    </div>
-                </div>
-            </div>
+  const rotateValues = ["rotate-2", "-rotate-1", "rotate-1", "-rotate-2"];
+
+  return (
+    <div className="self-stretch min-w-60 w-[435px] my-auto max-md:w-full">
+      {/* Desktop View - Original Grid Layout */}
+      <div className="hidden md:block rounded-[150px]">
+        {/* First Row */}
+        <div className="gap-5 flex">
+          <div className="w-3/5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/male/male-1.jpg"
+              className="aspect-[1.42] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
+              alt="Male portrait"
+            />
+          </div>
+          <div className="w-2/5 ml-5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/couple/couple-1.jpg"
+              className="aspect-[0.94] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay"
+              alt="Couple portrait"
+            />
+          </div>
         </div>
-    );
-}
+
+        {/* Second Row */}
+        <div className="gap-5 flex mt-5">
+          <div className="w-2/5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/female/female-1.jpg"
+              className="aspect-[1] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2"
+              alt="Female portrait"
+            />
+          </div>
+          <div className="w-3/5 ml-5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/businessprofile/businessprofile-2.jpg"
+              className="aspect-[1.52] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
+              alt="Business profile"
+            />
+          </div>
+        </div>
+
+        {/* Third Row */}
+        <div className="gap-5 flex mt-5">
+          <div className="w-2/5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/female/female-2.jpg"
+              className="aspect-[1] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
+              alt="Female portrait 2"
+            />
+          </div>
+          <div className="w-[30%] ml-5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/couple/couple-2.jpg"
+              className="aspect-[0.76] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay"
+              alt="Couple portrait 2"
+            />
+          </div>
+          <div className="w-[30%] ml-5">
+            <img
+              loading="lazy"
+              srcSet="assets/gallery/male/male-2.jpg"
+              className="aspect-[0.76] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2"
+              alt="Male portrait 2"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile View - Interactive Collage */}
+      <div className="md:hidden relative h-[70vh] w-full rounded-2xl overflow-hidden bg-gray-100">
+        {/* Main featured image */}
+        <img
+          src={mobileImages[activeMobileImage].src}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${activeMobileImage === 0 ? 'z-10' : 'z-0'}`}
+          alt={mobileImages[activeMobileImage].alt}
+        />
+
+        {/* Smaller interactive images positioned around */}
+        {mobileImages.map((img, index) => (
+          index !== activeMobileImage && (
+            <div
+              key={index}
+              className={`absolute ${index === 1 ? 'bottom-4 left-4' : index === 2 ? 'top-4 right-4' : 'bottom-8 right-8'} 
+                          ${mobileImages[index].className} rounded-xl overflow-hidden shadow-lg cursor-pointer 
+                          transition-transform duration-300 hover:scale-110 z-20 ${rotateValues[index]}`}
+              onClick={() => setActiveMobileImage(index)}
+            >
+              <img
+                src={img.src}
+                className="w-full h-full object-cover"
+                alt={img.alt}
+              />
+            </div>
+          )
+        ))}
+
+        {/* Navigation dots */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+          {mobileImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveMobileImage(index)}
+              className={`w-2 h-2 rounded-full ${index === activeMobileImage ? 'bg-white' : 'bg-white/50'}`}
+              aria-label={`View image ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default PhotoGrid;
