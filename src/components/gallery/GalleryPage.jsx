@@ -144,14 +144,14 @@ const GalleryPage = () => {
     //   subcategory: 'female',
     //   likes: 245
     // },
-    {
-      id: '11',
-      url: 'assets/gallery/female/female-4.jpg',
-      title: 'Female Section',
-      category: 'scheduled',
-      subcategory: 'female',
-      likes: 245
-    },
+    // {
+    //   id: '11',
+    //   url: 'assets/gallery/female/female-4.jpg',
+    //   title: 'Female Section',
+    //   category: 'scheduled',
+    //   subcategory: 'female',
+    //   likes: 245
+    // },
     // {
     //   id: '12',
     //   url: 'assets/gallery/female/female-5.jpg',
