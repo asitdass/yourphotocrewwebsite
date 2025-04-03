@@ -136,14 +136,14 @@ const GalleryPage = () => {
       subcategory: 'female',
       likes: 245
     },
-    {
-      id: '10',
-      url: 'assets/gallery/female/female-3.jpg',
-      title: 'Female Section',
-      category: 'scheduled',
-      subcategory: 'female',
-      likes: 245
-    },
+    // {
+    //   id: '10',
+    //   url: 'assets/gallery/female/female-3.jpg',
+    //   title: 'Female Section',
+    //   category: 'scheduled',
+    //   subcategory: 'female',
+    //   likes: 245
+    // },
     {
       id: '11',
       url: 'assets/gallery/female/female-4.jpg',
@@ -152,22 +152,22 @@ const GalleryPage = () => {
       subcategory: 'female',
       likes: 245
     },
-    {
-      id: '12',
-      url: 'assets/gallery/female/female-5.jpg',
-      title: 'Female Section',
-      category: 'scheduled',
-      subcategory: 'female',
-      likes: 245
-    },
-    {
-      id: '13',
-      url: 'assets/gallery/female/female-6.jpg',
-      title: 'Female Section',
-      category: 'scheduled',
-      subcategory: 'female',
-      likes: 245
-    },
+    // {
+    //   id: '12',
+    //   url: 'assets/gallery/female/female-5.jpg',
+    //   title: 'Female Section',
+    //   category: 'scheduled',
+    //   subcategory: 'female',
+    //   likes: 245
+    // },
+    // {
+    //   id: '13',
+    //   url: 'assets/gallery/female/female-6.jpg',
+    //   title: 'Female Section',
+    //   category: 'scheduled',
+    //   subcategory: 'female',
+    //   likes: 245
+    // },
     {
       id: '14',
       url: 'assets/gallery/female/female-7.jpg',
@@ -184,22 +184,22 @@ const GalleryPage = () => {
       subcategory: 'male',
       likes: 245
     },
-    {
-      id: '16',
-      url: 'assets/gallery/male/male-2.jpg',
-      title: 'Male Section',
-      category: 'scheduled',
-      subcategory: 'male',
-      likes: 245
-    },
-    {
-      id: '17',
-      url: 'assets/gallery/male/male-3.jpg',
-      title: 'Male Section',
-      category: 'scheduled',
-      subcategory: 'male',
-      likes: 245
-    },
+    // {
+    //   id: '16',
+    //   url: 'assets/gallery/male/male-2.jpg',
+    //   title: 'Male Section',
+    //   category: 'scheduled',
+    //   subcategory: 'male',
+    //   likes: 245
+    // },
+    // {
+    //   id: '17',
+    //   url: 'assets/gallery/male/male-3.jpg',
+    //   title: 'Male Section',
+    //   category: 'scheduled',
+    //   subcategory: 'male',
+    //   likes: 245
+    // },
     {
       id: '18',
       url: 'assets/gallery/male/male-4.jpg',
@@ -216,30 +216,30 @@ const GalleryPage = () => {
       subcategory: 'male',
       likes: 245
     },
-    {
-      id: '20',
-      url: 'assets/gallery/male/male-6.jpg',
-      title: 'Male Section',
-      category: 'scheduled',
-      subcategory: 'male',
-      likes: 245
-    },
-    {
-      id: '21',
-      url: 'assets/gallery/male/male-7.jpg',
-      title: 'Male Section',
-      category: 'scheduled',
-      subcategory: 'male',
-      likes: 245
-    },
-    {
-      id: '22',
-      url: 'assets/gallery/businessprofile/businessprofile-1.jpg',
-      title: 'Business Profile Shots',
-      category: 'scheduled',
-      subcategory: 'portfolio',
-      likes: 245
-    },
+    // {
+    //   id: '20',
+    //   url: 'assets/gallery/male/male-6.jpg',
+    //   title: 'Male Section',
+    //   category: 'scheduled',
+    //   subcategory: 'male',
+    //   likes: 245
+    // },
+    // {
+    //   id: '21',
+    //   url: 'assets/gallery/male/male-7.jpg',
+    //   title: 'Male Section',
+    //   category: 'scheduled',
+    //   subcategory: 'male',
+    //   likes: 245
+    // },
+    // {
+    //   id: '22',
+    //   url: 'assets/gallery/businessprofile/businessprofile-1.jpg',
+    //   title: 'Business Profile Shots',
+    //   category: 'scheduled',
+    //   subcategory: 'portfolio',
+    //   likes: 245
+    // },
     {
       id: '23',
       url: 'assets/gallery/businessprofile/businessprofile-2.jpg',
@@ -264,22 +264,22 @@ const GalleryPage = () => {
       subcategory: 'portfolio',
       likes: 245
     },
-    {
-      id: '26',
-      url: 'assets/gallery/businessprofile/businessprofile-5.jpg',
-      title: 'Business Profile Shots',
-      category: 'scheduled',
-      subcategory: 'portfolio',
-      likes: 245
-    },
-    {
-      id: '27',
-      url: 'assets/gallery/businessprofile/businessprofile-6.jpg',
-      title: 'Business Profile Shots',
-      category: 'scheduled',
-      subcategory: 'portfolio',
-      likes: 245
-    },
+    // {
+    //   id: '26',
+    //   url: 'assets/gallery/businessprofile/businessprofile-5.jpg',
+    //   title: 'Business Profile Shots',
+    //   category: 'scheduled',
+    //   subcategory: 'portfolio',
+    //   likes: 245
+    // },
+    // {
+    //   id: '27',
+    //   url: 'assets/gallery/businessprofile/businessprofile-6.jpg',
+    //   title: 'Business Profile Shots',
+    //   category: 'scheduled',
+    //   subcategory: 'portfolio',
+    //   likes: 245
+    // },
     {
       id: '28',
       url: 'assets/gallery/businessprofile/businessprofile-7.jpg',
@@ -287,7 +287,136 @@ const GalleryPage = () => {
       category: 'scheduled',
       subcategory: 'portfolio',
       likes: 245
+    },
+    {
+      id: '29',
+      url: 'assets/gallery/businessprofile/businessprofile-8.jpg',
+      title: 'Business Profile Shots',
+      category: 'scheduled',
+      subcategory: 'portfolio',
+      likes: 245
+    },
+    {
+      id: '30',
+      url: 'assets/gallery/businessprofile/businessprofile-9.jpg',
+      title: 'Business Profile Shots',
+      category: 'scheduled',
+      subcategory: 'portfolio',
+      likes: 245
+    },
+    {
+      id: '31',
+      url: 'assets/gallery/businessprofile/businessprofile-10.jpg',
+      title: 'Business Profile Shots',
+      category: 'scheduled',
+      subcategory: 'portfolio',
+      likes: 245
+    },
+    {
+      id: '32',
+      url: 'assets/gallery/businessprofile/businessprofile-11.jpg',
+      title: 'Business Profile Shots',
+      category: 'scheduled',
+      subcategory: 'portfolio',
+      likes: 245
+    },
+    {
+      id: '33',
+      url: 'assets/gallery/female/female-8.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '34',
+      url: 'assets/gallery/female/female-9.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '35',
+      url: 'assets/gallery/female/female-10.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '36',
+      url: 'assets/gallery/female/female-11.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '37',
+      url: 'assets/gallery/female/female-12.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '38',
+      url: 'assets/gallery/female/female-13.jpg',
+      title: 'Female Section',
+      category: 'scheduled',
+      subcategory: 'female',
+      likes: 245
+    },
+    {
+      id: '39',
+      url: 'assets/gallery/male/male-8.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
+    },
+    {
+      id: '40',
+      url: 'assets/gallery/male/male-9.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
+    },
+    {
+      id: '41',
+      url: 'assets/gallery/male/male-10.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
+    },
+    {
+      id: '42',
+      url: 'assets/gallery/male/male-11.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
+    },
+    {
+      id: '43',
+      url: 'assets/gallery/male/male-12.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
+    },
+    {
+      id: '44',
+      url: 'assets/gallery/male/male-13.jpg',
+      title: 'Male Section',
+      category: 'scheduled',
+      subcategory: 'male',
+      likes: 245
     }
+
   ];
 
   // Update the useEffect hook where shuffledImages is initialized
