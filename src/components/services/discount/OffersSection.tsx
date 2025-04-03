@@ -55,7 +55,7 @@ const OffersSection: React.FC = () => {
       startDate: '2025-01-01',
       endDate: '2025-07-10',
       status: 'active',
-      image: 'https://images.unsplash.com/photo-1551854716-8b811be39e7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
+      image: '/assets/services/discount/alarm-clock.jpg',
     },
     // {
     //   title: 'Group Discount',
