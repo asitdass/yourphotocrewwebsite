@@ -21,7 +21,7 @@ const PhotoGrid = () => {
           <div className="w-3/5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/male/male-1.jpg"
+              srcSet="assets/homescheduled/bus-2.jpg"
               className="aspect-[1.42] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
               alt="Male portrait"
             />
@@ -29,7 +29,7 @@ const PhotoGrid = () => {
           <div className="w-2/5 ml-5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/couple/couple-1.jpg"
+              srcSet="assets/gallery/couple/couple-2.jpg"
               className="aspect-[0.94] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay"
               alt="Couple portrait"
             />
@@ -41,7 +41,7 @@ const PhotoGrid = () => {
           <div className="w-2/5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/female/female-1.jpg"
+              srcSet="assets/homescheduled/female-2.jpg"
               className="aspect-[1] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2"
               alt="Female portrait"
             />
@@ -49,7 +49,7 @@ const PhotoGrid = () => {
           <div className="w-3/5 ml-5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/businessprofile/businessprofile-2.jpg"
+              srcSet="assets/homescheduled/male-2.jpg"
               className="aspect-[1.52] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
               alt="Business profile"
             />
@@ -61,7 +61,7 @@ const PhotoGrid = () => {
           <div className="w-2/5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/female/female-2.jpg"
+              srcSet="assets/homescheduled/female-4.jpg"
               className="aspect-[1] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float"
               alt="Female portrait 2"
             />
@@ -69,7 +69,7 @@ const PhotoGrid = () => {
           <div className="w-[30%] ml-5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/couple/couple-2.jpg"
+              srcSet="assets/homescheduled/male-9.jpg"
               className="aspect-[0.76] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay"
               alt="Couple portrait 2"
             />
@@ -77,7 +77,7 @@ const PhotoGrid = () => {
           <div className="w-[30%] ml-5">
             <img
               loading="lazy"
-              srcSet="assets/gallery/male/male-2.jpg"
+              srcSet="assets/homescheduled/male-7.jpg"
               className="aspect-[0.76] object-cover w-full rounded-[150px] hover:scale-105 transition-transform duration-500 ease-in-out animate-float-delay-2"
               alt="Male portrait 2"
             />

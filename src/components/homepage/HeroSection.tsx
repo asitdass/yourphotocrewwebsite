@@ -15,31 +15,23 @@ const HeroSection = () => {
     { image: "assets/homepage/hero/image-4.jpg", title: "Come Get 'THAT PIC'✨" },
   ];
 
-  const images = [
-    "assets/gallery/male/male-1.jpg",
-    "assets/gallery/female/female-1.jpg",
-    "assets/gallery/couple/couple-1.jpg",
-    "assets/gallery/businessprofile/businessprofile-1.jpg",
-    "assets/gallery/male/male-2.jpg",
-    "assets/gallery/female/female-2.jpg",
-    "assets/gallery/couple/couple-2.jpg",
-    "assets/gallery/businessprofile/businessprofile-2.jpg",
-    "assets/gallery/male/male-3.jpg",
-    "assets/gallery/female/female-3.jpg",
-    "assets/gallery/couple/couple-3.JPG",
-    "assets/gallery/businessprofile/businessprofile-3.JPG",
-    "assets/gallery/male/male-4.jpg",
-    "assets/gallery/female/female-4.JPG",
-    "assets/gallery/couple/couple-4.jpg",
-    "assets/gallery/businessprofile/businessprofile-4.jpg",
-    "assets/gallery/male/male-5.jpg",
-    "assets/gallery/female/female-5.jpg",
-    "assets/gallery/couple/couple-5.jpg",
-    "assets/gallery/businessprofile/businessprofile-5.jpg",
+  const imagesColumnOne = [
+    "assets/homescheduled/bus-1.jpg",
+    "assets/homescheduled/couple-1.jpg",
+    "assets/homescheduled/male-1.jpg",
+    "assets/homescheduled/female-1.jpg",
   ];
 
+  const imagesColumnTwo = [
+    "assets/homescheduled/female-3.jpg",
+    "assets/homescheduled/male-3.jpg",
+    "assets/gallery/couple/couple-3.jpg",
+    "assets/homescheduled/bus-3.jpg",
+  ]
+
   // Duplicate images to create seamless loop
-  const duplicatedImages = [...images, ...images];
+  const duplicatedImagesColumnOne = [...imagesColumnOne, ...imagesColumnOne];
+  const duplicatedImagesColumnTwo = [...imagesColumnTwo, ...imagesColumnTwo];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -137,7 +129,7 @@ const HeroSection = () => {
             scrollBehavior: 'auto',
           }}
         >
-          {duplicatedImages.map((image, index) => (
+          {duplicatedImagesColumnOne.map((image, index) => (
             <motion.div
               key={`first-col-${index}`}
               className="rounded-lg overflow-hidden flex-shrink-0"
@@ -161,7 +153,7 @@ const HeroSection = () => {
             scrollBehavior: 'auto',
           }}
         >
-          {[...duplicatedImages].reverse().map((image, index) => (
+          {duplicatedImagesColumnTwo.map((image, index) => (
             <motion.div
               key={`second-col-${index}`}
               className="rounded-lg overflow-hidden flex-shrink-0"

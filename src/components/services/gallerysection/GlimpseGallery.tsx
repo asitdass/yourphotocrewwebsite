@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 
 export const GlimpseGallery: React.FC = () => {
   const images = [
-    "assets/gallery/male/male-1.jpg",
-    "assets/gallery/female/female-1.jpg",
-    "assets/gallery/couple/couple-1.jpg",
-    "assets/gallery/businessprofile/businessprofile-1.jpg",
-    "assets/gallery/male/male-2.jpg",
-    "assets/gallery/female/female-2.jpg",
-    "assets/gallery/couple/couple-2.jpg",
-    "assets/gallery/businessprofile/businessprofile-2.jpg",
+    "assets/homescheduled/male-4.jpg",
+    "assets/homescheduled/female-5.jpg",
+    "assets/homescheduled/bus-4.jpg",
+    "assets/homescheduled/male-5.jpg",
+    "assets/homescheduled/female-6.jpg",
+    "assets/homescheduled/male-8.jpg",
+    "assets/homescheduled/bus-6.jpg",
+    "assets/gallery/couple/couple-6.jpg",
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -72,7 +72,7 @@ export const GlimpseGallery: React.FC = () => {
               href="/gallery" 
               className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-full font-medium transition-all duration-300 hover:bg-secondary hover:shadow-lg hover:-translate-y-1"
             >
-              View Full Gallery
+              View Our Gallery
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
