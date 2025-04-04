@@ -7,8 +7,8 @@ export const GlimpseGallery: React.FC = () => {
     "assets/homescheduled/bus-4.jpg",
     "assets/homescheduled/male-5.jpg",
     "assets/homescheduled/female-6.jpg",
-    "assets/homescheduled/male-8.jpg",
-    "assets/homescheduled/bus-6.jpg",
+    "assets/homescheduled/male-12.jpg",
+    "assets/homescheduled/male-11.jpg",
     "assets/gallery/couple/couple-6.jpg",
   ];
 
